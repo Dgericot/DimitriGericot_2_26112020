@@ -13,16 +13,15 @@
 header {
   font-family: "Raleway", Arial;
   font-weight: normal;
-}
-.encadrement {
-  border-radius: 20px / 10px;
-  border: 1px solid black;
+  background-color: "#F2F2F2";
 }
 
-#bloc_page {
-  display: flex;
-  justify-content: flex-start;
+/*Navigation*/
+
+header nav {
+text-align: right;
 }
+
 
 #logo img {
   width: 59px;
@@ -30,27 +29,40 @@ header {
   background-position: top-left;
 }
 
-header h1 {
+body h1 {
   font-size: medium;
-  text-align: justify;
+
 }
 
-body h2 {
-  font-size: medium;
-}
+/*Filtres*/
 
-/*Navigation*/
+.encadrement {
+	border-radius: 10px 5px 10px 5px;
+	border: 1px solid black;
 
-nav ul {
-  list-style-type: none;
-}
+  }
+
+
 
 /*footer*/
 
-footer h1 {
+footer h1{
   font-family: "Raleway", Arial;
   font-weight: bold;
   font-size: medium;
-  flex-direction: row;
   background-color: "#F2F2F2";
+
+}
+/*Navigation*/
+
+footer nav ul {
+	list-style-type: none;
+  }
+
+.a propos {
+	color:blue;
+}
+
+.Nos hébergements{
+
 }
