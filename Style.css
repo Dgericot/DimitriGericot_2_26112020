@@ -15,7 +15,10 @@ header {
   font-weight: normal;
   background-color: "#F2F2F2";
 }
-
+#bloc_page{
+	width: 900px; 
+	margin: auto;
+}
 /*Navigation*/
 
 header nav {
@@ -24,8 +27,7 @@ text-align: right;
 
 
 #logo img {
-  width: 59px;
-  height: 60px;
+  
   background-position: top-left;
 }
 
@@ -42,7 +44,21 @@ body h1 {
 
   }
 
-
+#conteneur1
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+#conteneur2{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
 
 /*footer*/
 
@@ -55,14 +71,20 @@ footer h1{
 }
 /*Navigation*/
 
-footer nav ul {
+footer ul {
 	list-style-type: none;
   }
 
-.a propos {
-	color:blue;
+.Apropos h1 p{
+	text-align: left;
+	display: inline-block;
 }
 
-.Nos hébergements{
-
+.Noshébergements{
+text-align: center;
+display: inline-block;
+}
+.Assistance{
+	text-align: right;
+	display: inline-block;
 }
