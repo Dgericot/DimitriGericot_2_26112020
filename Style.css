@@ -1,90 +1,153 @@
 /*Définition des polices*/
 
 @font-face {
-  font-family: "Open Sans", sans-serif, verdana;
-  font-family: "Raleway", sans-serif, verdana;
+    font-family: "Open Sans", sans-serif, verdana;
+    font-family: "Raleway", sans-serif, verdana;
 }
 
 /* Eléments principaux de la page */
 
 @media all and (max-width: 1280px) {
+
+}
+
+
+
+#bloc_page {
+    width: 900px;
+    margin: auto;
+}
+
+/*Navigation*/
+header nav {
+    text-align: right;
 }
 
 header {
-  font-family: "Raleway", Arial;
-  font-weight: normal;
-  background-color: "#F2F2F2";
+    font-family: "Raleway", Arial;
+    font-weight: normal;
+    background-color: "#F2F2F2";
 }
-#bloc_page{
-	width: 900px; 
-	margin: auto;
-}
-/*Navigation*/
-
-header nav {
-text-align: right;
-}
-
 
 #logo img {
-  
-  background-position: top-left;
+    background-position: top-left;
 }
 
 body h1 {
-  font-size: medium;
-
+    font-size: medium;
+    line-height:0.7em;
+}
+.bouton-search{
+    border: 0px 10px 0px 10px
+    background-color:#0065FC;
 }
 
 /*Filtres*/
 
 .encadrement {
-	border-radius: 10px 5px 10px 5px;
-	border: 1px solid black;
-
-  }
-
-#conteneur1
-{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	align-content: space-between;
-}
-#conteneur2{
-	display: flex;
-	justify-content: right;
-	align-items: center;
-	flex-wrap: wrap;
-	align-content: space-between;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #F2F2F2;
 }
 
-/*footer*/
 
-footer h1{
-  font-family: "Raleway", Arial;
-  font-weight: bold;
-  font-size: medium;
-  background-color: "#F2F2F2";
+/*container1 {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     border-radius: 10px 5px 10px 5px;
+     border: 1px solid black;
+     justify-content: space-around;
+     align-items: center;
+     align-content: space-between;
+     border: 2px;
+}*/
+
+#container2 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*align-content: space-between;*/
+    /*grid-template-columns: repeat(1, 1fr);*/
+    border: 2px;
+}
+
+
+
+/* MAIN SECTION WITH HOTELS VERT AND POPULAR */
+
+.hotels {  /* ici la grosse section qui encadre hotel-vert et hotel-grid */
+}
+
+.hotel-vert { /* configuration pour la partie verticale des hotels */
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
 
 }
-/*Navigation*/
 
-footer ul {
-	list-style-type: none;
-  }
-
-.Apropos h1 p{
-	text-align: left;
-	display: inline-block;
+.hotel-grid { /* la grille 3x3 au milieu */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px 5px 10px 5px;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    background-color: #F2F2F2;
+    border: 2px;
 }
 
-.Noshébergements{
-text-align: center;
-display: inline-block;
+.hotel-card {
+    width: calc(100% * (1/3) - 10px - 1px); 
+    box-sizing: border-box;
+    margin: 5px; 
+    border-radius: 10px 5px 10px 5px;  
+    border: 1px solid black; 
 }
-.Assistance{
-	text-align: right;
-	display: inline-block;
+
+/* Hotel card images */
+.hotel-card img {
+    height: 200px;
+    width: auto;
+    
+}
+
+.hotel-card-popular { 
+    box-sizing: border-box;
+    margin: 5px; 
+    border-radius: 10px 5px 10px 5px;  
+    border: 1px solid black; 
+
+
+    }
+    
+
+/* FOOTER */
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+}
+
+.footer > .h1 {
+    font-family: "Raleway", Arial;
+    font-weight: bold;
+    font-size: medium;
+    background-color: "#F2F2F2";
+}
+
+.footer-sections{
+    list-style-type: none;
+}
+
+
+.footer-sections { /* configuration des sections du footer */
+
 }
