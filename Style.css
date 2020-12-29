@@ -33,12 +33,12 @@ header {
     background-position: top-left;
 }
 
-body h1 {
+h1 {
     font-size: medium;
     line-height:0.7em;
 }
 .bouton-search{
-    border: 0px 10px 0px 10px
+    border: 0px 10px 0px 10px;
     background-color:#0065FC;
 }
 
@@ -136,14 +136,14 @@ body h1 {
     align-content: space-between;
 }
 
-.footer > .h1 {
+footer  h1 {
     font-family: "Raleway", Arial;
     font-weight: bold;
     font-size: medium;
     background-color: "#F2F2F2";
 }
 
-.footer-sections{
+footer li{
     list-style-type: none;
 }
 
