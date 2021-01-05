@@ -86,6 +86,7 @@ color: transparent;
 }
 
 /*Filtres*/
+
 .span{
 display: flex;
 flex-direction: row;
@@ -129,16 +130,29 @@ padding: 12px;
 border-radius: 50%;
 }
 .fa-info-circle {
-color: #0065fc;
-background-color: white;
+color: white;
+background-color: #0065fc;
+border-radius: 60%;
+}
+.fa-chart-line
+{
+    padding-left: 30px;
+}
+.fa-star{
+    color:  #0065fc;
+}
+.far.fa-star{
+    color:  #f2f2f2;
 }
 /* MAIN SECTION WITH HOTELS GRID AND POPULAR */
+
 section {
 display: flex;
 }
 
-.hotel-grid {
   /* la grille 3x3 au milieu */
+
+.hotel-grid {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -151,9 +165,10 @@ background-color: #f2f2f2;
 border: 2px;
 }
 
+
 .hotel-card {
   width: calc(100% * (1 / 3) - 10px - 1px);
-box-sizing: border-box;
+background-color: white;
 margin-left: 5px;
 border-radius: 10px 5px 10px 5px;
 border: 1px solid black;
@@ -162,11 +177,13 @@ border: 1px solid black;
 /* Hotel card images */
 
 .hotel-card img {
-height: 150px;
-width: auto;
+width:200px;
+height:200px;
+
 }
 
 #container2 {
+    display: flex;
 position: relative;
 flex-direction: column;
 flex-wrap: nowrap;
@@ -177,12 +194,41 @@ background-color: #f2f2f2;
 }
 
 .hotel-card-popular img {
-box-sizing: border-box;
 margin: 5px;
+background-color: white;
 border-radius: 10px 5px 10px 5px;
 border: 1px solid black;
-height: 200px;
-width: auto;
+height: 150px;
+width: 150px;
+}
+.container3 {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-content: space-between;
+background-color: teal;
+width: 100%;
+margin: auto;
+}
+
+.card-activity1 img{
+height: 300px;
+width:250px ;
+}
+
+.card-activity2 img{
+height: 150px;
+width: 200px;
+}
+.card-activity3 img{
+
+height: 130px;
+width:200px;
+}
+
+.card-activity4 img{
+    height: 180px;
+    width: 220px;
 }
 
 /* FOOTER */
@@ -199,7 +245,9 @@ background-color:#f2f2f2;
 }
 
 footer a {
+
   /* configuration des sections du footer */
+
 text-decoration: none;
 color: black;
 }
@@ -219,53 +267,62 @@ padding-left: 0;
     
 #bloc_page {
 
-    width: auto; 
+width: auto; 
 }
+
 header{
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
     
 body h1 {
-    line-height: 1.2em;
+line-height: 1.2em;
 }
 
 #logo img {
+display: flex;
+flex-wrap: nowrap;
 width: 80px;
 order:1;
 }
 
 .menu1 a  { 
-    order:2;
-    width:50%;
+display: flex;
+flex-wrap: wrap;
+order:3;
+width:50%;
 color: #0065fc;
 border-bottom: 2px solid #0065fc;
 border-top: none;
 }
 
 .menu2 a {
-    order:3;
-    width:50%;
+display: flex;
+flex-wrap: wrap;
+order:4;
+width:50%;
 color: black;
 border-bottom: 2px solid #f2f2f2;
 }
 .menu3 a {
-    order:4;
+display: flex;
+flex-wrap: nowrap;
+order:2;
 color: #0065fc;
 }
-section{
-    display: flex;
-    flex-wrap: nowrap;
-}
+
+
 #bouton-search p {
-    color: transparent;
-    border-radius: 0px 15px 15px 0px;
-    border-color: #f2f2f2;
-    background-color: #0065fc;
+color: transparent;
+border-radius: 0px 15px 15px 0px;
+border-color: #f2f2f2;
+background-color: #0065fc;
+}
+
+.fa-search {
+color: white;
     }
-    .fa-search {
-    color: white;
-    }
+
 #bouton-search p {
 border-radius: 10px 10px 10px 10px;
 padding: 10px;
@@ -273,16 +330,57 @@ width: 15%;
 background-color: #0065fc;
 }
 
-.encadrement  {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px 10px 10px 10px;
-    border: solid black 0.2em;
-    width: 20%;
-    padding: 10px;
-    margin: 5px;
-    }
-    
+.encadrement h4 {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+border-radius: 10px 10px 10px 10px;
+border: solid #f2f2f2 0.2em;
+width: 10%;
+padding: 10px;
+margin: 5px;
+}
+
+.container3 {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+order:1;
+justify-content: space-between;
+align-content: space-between;
+background-color: teal;
+width: 100%;
+margin: auto;
+}
+
+.hotel-grid {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+order:2;
+border-radius: 10px 5px 10px 5px;
+border: 1px solid black;
+align-content: space-between;
+background-color: #f2f2f2;
+border: 2px;
+} 
+
+#container2 {
+display: flex;
+flex-direction: column;
+order:3;
+flex-wrap: wrap;
+border: 2px;
+margin-left: 20px;
+padding-top: 20px;
+background-color: #f2f2f2;
+}
+            
+.container{
+    margin:auto;
+}    
+
+
 .footer-sections {
 display: flex;
 flex-direction: column;
@@ -292,13 +390,7 @@ background-color: #f2f2f2;
 .footer-box {
 flex-direction: column;
 }
-
-
 }
-
-
-
-
 @media screen and (min-width: 981px) {
 .footer-sections {
     width: 30%;
