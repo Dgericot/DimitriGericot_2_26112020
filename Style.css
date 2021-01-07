@@ -4,7 +4,9 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/* Eléments principaux de la page */
+/*#############################*/
+/*Eléments principaux de la page*/
+/*#############################*/
 
 .container {
     max-width: 1200px;
@@ -86,7 +88,9 @@ input {
     color: transparent;
 }
 
-/*Filtres*/
+                /*######*/
+                /*Filtres*/
+                /*######*/
 
 .span{
     flex-direction: row;
@@ -244,7 +248,7 @@ figcaption {
 }
 
 
-#container2 {
+#populaires {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -264,7 +268,7 @@ figcaption {
     width: 150px;
 }
 
-.container3 {
+.activity {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -272,11 +276,13 @@ figcaption {
     width: 100%;
     margin: auto;
 }
+/*Images activity*/
 
 .card-activity1 img {
     height: 300px;
     width:250px ;
     border-radius: 25px 25px 0px 0px;
+background-color: red;
 }
 
 .card-activity2 img {
@@ -298,6 +304,7 @@ figcaption {
 }
 
 /* FOOTER */
+
 .footer-box {
     display: flex;
     flex-direction: row;
@@ -325,7 +332,9 @@ footer a {
     padding-left: 0;
 }
 
-/*Partie responsive*/
+                        /*#################*/
+                        /*Partie responsive*/
+                        /*#################*/
 
 @media screen and (max-width: 980px) {
     #bloc_page {
@@ -401,7 +410,7 @@ footer a {
         width: auto;
     }
 
-    .container3 {
+    .activity {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -412,7 +421,7 @@ footer a {
         margin: auto;
     }
 
-    .container3 img {
+    .activity img {
         width: 250px;
         height: 150px;
     }
@@ -429,7 +438,7 @@ footer a {
         background-color: none;
     }
 
-    #container2 {
+    #populaires {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
