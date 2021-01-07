@@ -370,6 +370,7 @@ footer a {
     }
 
     #logo img {
+        flex-wrap: wrap;
         width: 80px;
         order:1;
     }
@@ -389,6 +390,7 @@ footer a {
         border-bottom: 2px solid #f2f2f2;
     }
     .menu3 a {
+        flex-wrap: wrap;
         margin:150px;
         order:4;
         color: #0065fc;
@@ -427,8 +429,9 @@ footer a {
         flex-wrap: wrap;
     }
 
-    .hotel-card {
+    .hotel-card{
         width: auto;
+        
     }
 
     .activity {
@@ -440,25 +443,35 @@ footer a {
         align-content: space-between;
         width: 100%;
         margin: auto;
+        margin-left: -20px;
+    }
+    .activity h1{
+        margin-left: 20px;
     }
 
     .activity img {
-        width: 250px;
-        height: 150px;
+        width: 20rem;
+        height: 9rem;
     }
 
     .hotel-grid {
         display: flex;
         flex-direction: column;
         order:2;
-        width: auto;
         border-radius: 10px 5px 10px 5px;
         border: 1px solid black;
         align-content: space-between;
         border: 2px;
-        background-color: none;
+        padding-top:10px;
+        background-color:white ;
+        width: 100%;
+        margin: auto;
+        margin-left: -25px;
     }
-
+.hotel-grid img{
+    width: 20rem;
+    height: 9rem;
+}
     #populaires {
         display: flex;
         flex-wrap: wrap;
@@ -466,6 +479,9 @@ footer a {
         order:3;
         border: 2px;
         background-color: #f2f2f2;
+        margin-left: -20px;
+        border-radius:0px;
+        padding-bottom: 10px;
     }
 
     .footer-sections {
