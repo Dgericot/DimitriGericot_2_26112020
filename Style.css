@@ -14,23 +14,32 @@ body {
     margin: auto;
     padding: 1em;
 }
+/*Photos body*/
 figure a{
     text-decoration: none;
     color:black;
 }
 /*Navigation*/
+
+header img {
+    width: 95px;
+}
+
 .liens-menu ul {
     list-style-type: none;
+    display: flex;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+
 }
 
 header a {
     color: black;
     text-decoration: none;
+    padding:0px 20px;
 }
 
 .menu1 a {
@@ -41,44 +50,54 @@ header a {
 
 .menu3 a {
     color: #0065fc;
-}
-
-header img {
-    width: 80px;
+    font-weight: bold;
 }
 
 h1 {
-    font-size:1.10em;
+    font-weight: bold;
+    font-size:1.15em;
     line-height: 0.7em;
 }
+
 
 section {
     display: flex;
     flex-wrap: nowrap;
 }
+/*barre de recherche*/
 
+#recherche  {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
 .fa-map-marker-alt {
     color: black;
     border-radius: 10px 0px 0px 10px;
     background-color:  #f2f2f2;
-    padding: 14px;
+    padding: 16px;
+    padding-bottom: 18px;
+    padding-top:15px;
 }
 
 input {
     font-weight:bold;
-    border-radius: 0px 10px 10px 0px;
     border:2px solid #f2f2f2;
     border-color: #f2f2f2;
-    padding: 12.5px;
+    padding: 15px;
+
 }
 
 #bouton-search p {
+    align-self: flex-start;
     color: white;
+    font-size: 1.3em;
     border-radius: 0px 15px 15px 0px;
     border-color: #f2f2f2;
     padding: 15px;
     background-color: #0065fc;
 }
+
 #bouton-search{
     border:none;
     background-color: transparent;
@@ -191,6 +210,13 @@ figcaption p {
     margin-bottom: 5%;
 }
 
+.hotel-card-picture{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
 /*  width: calc(100% * (1 / 3) - 10px - 1px);*/
 .hotel-title {
     margin-left: 10px;
@@ -202,7 +228,7 @@ figcaption p {
     margin-left: 10px;
 }
 
-/* Hotel card images */
+/* Hébergements */
 
 .hotel-card {
     width: calc(100% * (1 / 3) - 10px - 1px);
@@ -215,7 +241,6 @@ figcaption p {
     align-content: flex-start;
 }
 
-/* Hotel card images */
 figure {
     border-radius: 25px 25px 25px 25px;
     /*margin: auto;*/
@@ -226,12 +251,13 @@ figure {
 }
 
 figure img {
-    /*width: 250px;*/
+    /* width: 250px;
+    height: 150px;*/
     display: flex;
     flex-flow: row nowrap;
     /*max-width: 100%;*/
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     border-radius: 20px 20px 0px 0px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -266,16 +292,27 @@ figcaption {
 #populaires figcaption{
     border-radius: 25px 25px 25px 25px;
     background-color: white;
-    width: 18rem;
+    width:18rem;
 }
 
 .hotel-card-popular img {
+    /*width: 100%;
+    height: auto;*/
     float: left;
     margin: 5px;
     border-radius: 25px 0px 0px 25px;
     height: 150px;
-    width: 150px;
+    width:150px;
+    
 }
+/*.hotel-card-picture2{
+    width: 100%;
+    height: auto;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}*/
+
+
 /*Dernière section activités*/
 
 .activity {
@@ -291,7 +328,6 @@ figcaption {
 
 .activity figure{
     background-color:white;
-    box-shadow: 1px 1px 0.2px black;
 }
 
 .card-activity1 img {
@@ -322,6 +358,9 @@ figcaption {
 
 /* FOOTER */
 
+footer h1{
+    font-size: 1.10em;
+}
 .footer-box {
     display: flex;
     flex-direction: row;
