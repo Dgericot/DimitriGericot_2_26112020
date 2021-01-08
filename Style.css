@@ -2,6 +2,7 @@
 
 body {
     font-family: "Raleway", sans-serif;
+    margin:0;
 }
 
 /*#############################*/
@@ -13,12 +14,12 @@ body {
     margin: auto;
     padding: 1em;
 }
-
+figure a{
+    text-decoration: none;
+}
 /*Navigation*/
 .liens-menu ul {
     list-style-type: none;
-    text-align: right;
-    padding: 0px;
 }
 
 header {
@@ -48,7 +49,6 @@ header a {
 
 header img {
     width: 80px;
-    padding-right: 35em;
 }
 
 h1 {
@@ -94,7 +94,6 @@ input {
 
 .span{
     flex-direction: row;
-    flex-wrap: no-wrap;
     justify-content: flex-start;
 }
 
@@ -104,13 +103,11 @@ input {
     border-radius: 30px 30px 30px 30px;
     border: solid #f2f2f2 0.2em;
     width: 20%;
-    padding: 10px;
-    margin: 5px;
 }
 
-.encadrement:hover{
-    color:lightblue;
-    background-color:lightseagreen;
+button:hover{
+    color: #deebff;
+    background-color:#0065fc;
 }
 
 .fa-money-bill-wave {
@@ -195,7 +192,6 @@ figcaption p {
 /*  width: calc(100% * (1 / 3) - 10px - 1px);*/
 .hotel-title {
     margin-left: 10px;
-    padding-bottom: -20px;
     padding-left: 10px;
     /*margin-bottom: -80px;*/
     width: 100%;
@@ -371,7 +367,6 @@ footer a {
 
     #logo img {
         flex-wrap: wrap;
-        width: 80px;
         order:1;
     }
 
