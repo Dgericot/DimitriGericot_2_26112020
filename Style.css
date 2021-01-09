@@ -12,13 +12,17 @@ body {
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
 }
 /*Photos body*/
 figure a{
     text-decoration: none;
     color:black;
 }
+figure {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 /*Navigation*/
 
 header img {
@@ -114,19 +118,24 @@ input {
 
 #filtres{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    justify-content:flex-start;
 }
 
     /*Encadrement des filtres de recherche*/
 
-.encadrement  {
+.encadrement {
+    font-weight: bold;
+    font-size: 1em;
     border-radius: 30px 30px 30px 30px;
     border: solid #f2f2f2 0.2em;
+    background-color: white;
     width: 20%;
+    padding: 5px;
+    margin: 5px;
 }
 
-button:hover{
+
+button:hover {
     color: #deebff;
     background-color:#0065fc;
 }
@@ -139,12 +148,22 @@ button:hover{
     border-radius: 50%;
 }
 
+.fa-money-bill-wave:hover{
+    background-color:rgb(250, 250, 250);
+
+}
+
 .fa-child {
     color: #0065fc;
     background-color: #deebff;
     padding: 12px;
     margin-right: 15px;
     border-radius: 50%;
+}
+
+.fa-child:hover {
+    background-color:rgb(250, 250, 250);
+
 }
 
 .fa-heart {
@@ -155,6 +174,11 @@ button:hover{
     border-radius: 50%;
 }
 
+.fa-heart:hover {
+    background-color:rgb(250, 250, 250);
+
+}
+
 .fa-dog {
     color: #0065fc;
     background-color: #deebff;
@@ -162,6 +186,12 @@ button:hover{
     margin-right: 15px;
     border-radius: 50%;
 }
+
+.fa-dog:hover {
+    background-color:rgb(250, 250, 250);
+
+}
+
 .fa-info-circle {
     color: white;
     background-color: #0065fc;
@@ -169,7 +199,7 @@ button:hover{
 }
 
 .fa-chart-line {
-    padding-left: 30px;
+    padding-left: 100px;
 }
 
 .fa-star {
@@ -202,12 +232,12 @@ figcaption p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     border-radius: 25px 25px 25px 25px;
     background-color: #f2f2f2;
     border: 2px;
     margin: 0px;
-    align-content: flex-start;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 }
 
 .hotel-card-picture{
@@ -265,7 +295,6 @@ figure img {
     flex-flow: row nowrap;
     /*max-width: 100%;*/
     width: 100%;
-    height: auto;
     border-radius: 20px 20px 0px 0px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -286,83 +315,107 @@ figcaption {
 
 #populaires {
     display: flex;
-    position: relative;
     flex-direction: column;
     flex-wrap: nowrap;
     border-radius: 25px 25px 25px 25px;
     border: 2px;
     margin-left: 40px;
-    padding-top: 20px;
     padding-bottom: 115px;
     background-color: #f2f2f2;
 }
 
-#populaires figcaption{
+#populaires h1{
+    padding-left: 15px;
+}
+#populaires figcaption {
     border-radius: 25px 25px 25px 25px;
     background-color: white;
-    width:18rem;
+    width:20rem;
+}
+
+.hotel-card-popular figure a{ 
+    display: flex;
+
 }
 
 .hotel-card-popular img {
     /*width: 100%;
     height: auto;*/
-    float: left;
     margin: 5px;
     border-radius: 25px 0px 0px 25px;
-    height: 150px;
     width:150px;
+    height: 150px;
     
 }
-/*.hotel-card-picture2{
+.hotel-card-picture2 {
+    position:relative;
     width: 100%;
     height: auto;
     padding-bottom: 56.25%;
-    overflow: hidden;
-}*/
+}
 
+.hotel-card-picture2 img { 
+position:absolute;
+object-fit: cover;
+height: 100%;
+}
 
 /*Dernière section activités*/
+/*
+section .activity{
+    display: block;
+}*/
 
 .activity {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: space-between;
-    width: 100%;
     margin-bottom: auto;
 }
 
-/*Images activity*/
-
-.activity figure{
-    background-color:white;
- }
-
-.card-activity1 img {
-    height: 300px;
-    width:250px ;
-    border-radius: 25px 25px 0px 0px;
-
+.activity figcaption{
+    padding-bottom: 15px;
 }
 
 
+/*Images activity*/
+
+.activity-picture{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.card-activity1 img {    
+    object-fit: cover;
+    height:340px;
+    width:250px;
+    border-radius: 25px 25px 0px 0px;
+    margin-bottom: 12px;
+
+
+}
+
 .card-activity2 img {
-    height: 150px;
+    object-fit:cover;
+    height:140px;
     width: 250px;
     border-radius:25px 25px 0px 0px;
+    margin-bottom: 12px;
+
 }
 
 .card-activity3 img {
-    height: 130px;
-    width:250px;
+    object-fit: cover;
+    height:130px;
+    width: 250px;
     border-radius: 25px 25px 0px 0px;
+    margin-bottom: 12px;
+
 }
 
-.card-activity4 img {
-    height: 180px;
-    width: 270px;
-    border-radius: 25px 25px 0px 0px;
-}
 
 /* FOOTER */
 
