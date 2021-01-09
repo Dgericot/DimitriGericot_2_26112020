@@ -19,9 +19,7 @@ figure a{
     text-decoration: none;
     color:black;
 }
-figure {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+
 
 /*Navigation*/
 
@@ -32,6 +30,7 @@ header img {
 .liens-menu ul {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
 }
 
 header {
@@ -55,6 +54,11 @@ header a {
 .menu3 a {
     color: #0065fc;
     font-weight: bold;
+
+}
+li.menu3{
+    list-style-type: none;
+
 }
 
 h1 {
@@ -70,10 +74,11 @@ section {
 }
 /*barre de recherche*/
 
-#recherche  {
+.recherche  {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: baseline;
+
 }
 .fa-map-marker-alt {
     color: black;
@@ -89,20 +94,21 @@ input {
     border:2px solid #f2f2f2;
     border-color: #f2f2f2;
     padding: 15px;
-
+    border-right: 10px;
 }
 
 #bouton-search p {
-    align-self: flex-start;
     color: white;
     font-size: 1.3em;
     border-radius: 0px 15px 15px 0px;
     border-color: #f2f2f2;
-    padding: 15px;
+    padding: 14px;
     background-color: #0065fc;
 }
 
 #bouton-search{
+    display: flex;
+    flex-wrap: nowrap;
     border:none;
     background-color: transparent;
 }
@@ -118,19 +124,27 @@ input {
 
 #filtres{
     display: flex;
-    justify-content:flex-start;
+    flex-wrap: nowrap;
 }
 
     /*Encadrement des filtres de recherche*/
 
+#filtres button{
+    text-align: left;
+}
+
+#filtres h4{
+    margin-right: 10px;
+}
+
 .encadrement {
     font-weight: bold;
     font-size: 1em;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 200px 200px 200px 200px;
     border: solid #f2f2f2 0.2em;
     background-color: white;
     width: 20%;
-    padding: 5px;
+    padding: 0;
     margin: 5px;
 }
 
@@ -140,12 +154,13 @@ button:hover {
     background-color:#0065fc;
 }
 
+
 .fa-money-bill-wave {
     color: #0065fc;
     background-color: #deebff;
-    padding: 12px;
+    padding: 19px;
     margin-right: 15px;
-    border-radius: 50%;
+    border-radius: 45%;
 }
 
 .fa-money-bill-wave:hover{
@@ -154,9 +169,10 @@ button:hover {
 }
 
 .fa-child {
+    object-fit: cover;
     color: #0065fc;
     background-color: #deebff;
-    padding: 12px;
+    padding: 19px;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -169,7 +185,7 @@ button:hover {
 .fa-heart {
     color: #0065fc;
     background-color: #deebff;
-    padding: 12px;
+    padding: 19px;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -182,7 +198,7 @@ button:hover {
 .fa-dog {
     color: #0065fc;
     background-color: #deebff;
-    padding: 12px;
+    padding: 19px;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -239,6 +255,7 @@ figcaption p {
     margin: 0px;
     margin-bottom: 50px;
 }
+    
 
 .hotel-card-picture{
     position: relative;
@@ -265,6 +282,8 @@ figcaption p {
     width: calc(100% * (1 / 3) - 10px - 1px);
     background-color: white;
     border-radius: 25px 25px 25px 25px;
+    box-shadow:  0px 2px 20px rgba(0, 0, 0, 0.3);
+
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -378,6 +397,10 @@ section .activity{
     padding-bottom: 15px;
 }
 
+.activity figure{
+    box-shadow:  0px 1px 10px rgba(0, 0, 0, 0.3);
+    }
+
 
 /*Images activity*/
 
@@ -459,43 +482,57 @@ footer a {
     }
 
     header {
-        display: flex;
         flex-wrap: wrap;
     }
 
     body h1 {
-        line-height: 1.2em;
+        line-height: 1em;
+        font-size:1em;
+    }
+    p{
+        font-size:0.8em;
     }
 
     #logo img {
         flex-wrap: wrap;
+        width:50%;
         order:1;
     }
 
+    .liens-menu {
+        justify-content: flex-start;
+        width: 100%;
+        order: 3;
+        font-size: 0.8em;
+    }
+    
     .menu1 a {
-        order:2;
-        width:50%;
         color: #0065fc;
         border-bottom: 2px solid #0065fc;
         border-top: none;
     }
 
     .menu2 a {
-        order:3;
-        width:50%;
         color: black;
         border-bottom: 2px solid #f2f2f2;
     }
     .menu3 a {
         flex-wrap: wrap;
-        margin:150px;
-        order:4;
+        width: 50%;
+        font-size: 0.8em;   
+        order:2;
+        font-size: 0.8em;   
         color: #0065fc;
     }
 
 
     input {
-        margin:auto;
+        display: flex;
+    }
+
+    .recherche{
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     #bouton-search p {
@@ -512,15 +549,72 @@ footer a {
 
     /*Encadrement des filtres de recherche*/
 
-    .encadrement h4 {
+    #filtres{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        border-radius: 10px 10px 10px 10px;
-        border: solid #f2f2f2 0.2em;
-        margin: 5px;
     }
+    .encadrement {
+        font-weight: bold;
+        font-size: 0.8em;
+        border-radius: 25px 25px 25px 25px;
+        border: solid #f2f2f2 0.2em; 
+        background-color: white;
+        width: auto;
+        margin:14px
+        }
 
+        .fa-money-bill-wave {
+        color: #0065fc;
+            background-color: #deebff;
+            padding: 7px;
+            margin-right: 15px;
+            border-radius: 45%;
+        }
+        
+        .fa-money-bill-wave:hover{
+            background-color:rgb(250, 250, 250);
+        
+        }
+        
+        .fa-child {
+            object-fit: cover;
+            color: #0065fc;
+            background-color: #deebff;
+            padding: 7px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        
+        .fa-child:hover {
+            background-color:rgb(250, 250, 250);
+        
+        }
+        
+        .fa-heart {
+            color: #0065fc;
+            background-color: #deebff;
+            padding: 7px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        
+        .fa-heart:hover {
+            background-color:rgb(250, 250, 250);
+        
+        }
+        
+        .fa-dog {
+            color: #0065fc;
+            background-color: #deebff;
+            padding: 7px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        
+        .fa-dog:hover {
+            background-color:rgb(250, 250, 250);
+        
+        }
     section{
         display:flex;
         flex-wrap: wrap;
@@ -561,10 +655,12 @@ footer a {
         background-color:white ;
         margin: auto;
     }
-.hotel-grid img{
-    width: 20rem;
-    height: 9rem;
-}
+    .hotel-card-picture{
+        width: 20rem;
+        height: 5rem;
+        overflow: hidden;
+    }
+
     #populaires {
         display: flex;
         flex-wrap: wrap;
@@ -574,6 +670,7 @@ footer a {
         background-color: #f2f2f2;
         border-radius:0px;
         padding-bottom: 10px;
+        margin: auto;
     }
 
     .footer-sections {
