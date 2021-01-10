@@ -98,6 +98,7 @@ input {
 }
 
 #bouton-search p {
+    align-self: flex-start;
     color: white;
     font-size: 1.3em;
     border-radius: 0px 15px 15px 0px;
@@ -226,9 +227,9 @@ button:hover {
     color:  #f2f2f2;
 }
 
-/*############################################*/
-/* MAIN SECTION WITH HOTELS GRID AND POPULAR */
-/*############################################*/
+                /*############################################*/
+                /* MAIN SECTION WITH HOTELS GRID AND POPULAR */
+                /*############################################*/
 
 /*section {display: flex;}*/
 figcaption {
@@ -330,7 +331,7 @@ figcaption {
     margin-right: 10px;
 }
 
-/*section aside*/
+/*section aside Les plus populaires*/
 
 #populaires {
     display: flex;
@@ -380,10 +381,10 @@ height: 100%;
 }
 
 /*Dernière section activités*/
-/*
-section .activity{
+
+#act-Marseille{
     display: block;
-}*/
+}
 
 .activity {
     display: flex;
@@ -666,7 +667,7 @@ footer a {
         margin-left:5px;
         margin-right:5px;
     }
-    
+
     .hotel-grid figcaption{
         line-height: 0.5;
     }
