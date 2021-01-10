@@ -254,7 +254,7 @@ figcaption p {
     background-color: #f2f2f2;
     border: 2px;
     margin: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
     
 
@@ -340,23 +340,25 @@ figcaption {
     border-radius: 25px 25px 25px 25px;
     border: 2px;
     margin-left: 40px;
-    padding-bottom: 115px;
+    padding-bottom: 0px;
     background-color: #f2f2f2;
 }
 
 #populaires h1{
     padding-left: 15px;
 }
+
 #populaires figcaption {
+    flex-direction: column;
     border-radius: 25px 25px 25px 25px;
     background-color: white;
     width:20rem;
 }
 
-.hotel-card-popular figure a{ 
+#populaires figure{
     display: flex;
-
 }
+
 
 .hotel-card-popular img {
     /*width: 100%;
@@ -487,9 +489,17 @@ footer a {
     }
 
     body h1 {
-        line-height: 1em;
-        font-size:1.3em;
+        line-height: 1.2em;
+        font-size:1em;
     }
+    h2{
+        font-size: 1em;
+    }
+    
+    figcaption{
+        font-size: 0.8em;
+    }
+
     p{
         font-size:0.8em;
     }
