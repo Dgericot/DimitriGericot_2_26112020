@@ -216,7 +216,7 @@ button:hover {
 }
 
 .fa-chart-line {
-    padding-left: 100px;
+    padding-left: 135px;
 }
 
 .fa-star {
@@ -255,6 +255,9 @@ figcaption p {
     border: 2px;
     margin: 0px;
     margin-bottom: 0px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 20px;
 }
     
 
@@ -341,6 +344,9 @@ figcaption {
     border: 2px;
     margin-left: 40px;
     padding-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #f2f2f2;
 }
 
@@ -417,7 +423,7 @@ height: 100%;
 .card-activity1 img {    
     object-fit: cover;
     height:340px;
-    width:250px;
+    width:280px;
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 12px;
 
@@ -427,7 +433,7 @@ height: 100%;
 .card-activity2 img {
     object-fit:cover;
     height:140px;
-    width: 250px;
+    width: 280px;
     border-radius:25px 25px 0px 0px;
     margin-bottom: 12px;
 
@@ -436,7 +442,7 @@ height: 100%;
 .card-activity3 img {
     object-fit: cover;
     height:130px;
-    width: 250px;
+    width: 280px;
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 12px;
 
