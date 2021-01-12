@@ -76,10 +76,14 @@ section {
 
 .recherche  {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: baseline;
-
+    border:none;
+    background-color: transparent;
 }
+
+
 .fa-map-marker-alt {
     color: black;
     border-radius: 10px 0px 0px 10px;
@@ -97,21 +101,13 @@ input {
     border-right: 10px;
 }
 
-#bouton-search h5 {
-    align-self: flex-start;
+.recherche h5 {
     color: white;
-    font-size: 1.3em;
+    font-size: 1em;
     border-radius: 0px 15px 15px 0px;
     border-color: #f2f2f2;
     padding: 14px;
     background-color: #0065fc;
-}
-
-#bouton-search{
-    display: flex;
-    flex-wrap: nowrap;
-    border:none;
-    background-color: transparent;
 }
 
 .fa-search {
@@ -556,7 +552,7 @@ footer a {
         flex-wrap: nowrap;
     }
 
-    #bouton-search h5 {
+    .recherche h5 {
         flex-wrap: nowrap;
         font-size: 1em;
         color: transparent;
