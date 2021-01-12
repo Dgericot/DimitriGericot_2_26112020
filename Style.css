@@ -388,6 +388,7 @@ height: 100%;
 
 #act-Marseille{
     display: block;
+    margin-top:55px;
 }
 
 .activity {
@@ -413,37 +414,55 @@ height: 100%;
     position: relative;
     width: 100%;
     overflow: hidden;
-
 }
 
 .card-activity1 img {    
     object-fit: cover;
     height:340px;
-    width:280px;
+    width:270px;
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 12px;
-
-
 }
 
 .card-activity2 img {
     object-fit:cover;
     height:140px;
-    width: 280px;
+    width: 270px;
     border-radius:25px 25px 0px 0px;
     margin-bottom: 12px;
+}
 
+.card-activity2 figure{
+    margin-bottom: 36px;
+}
+
+#frioul img{
+    height: 90px;
+}
+
+#fort img{
+    height: 160px; 
+}
+/*#frioul figure{
+    margin-bottom: 100px;
+
+}*/
+
+#frioul figcaption{
+    padding-top: 27px;
 }
 
 .card-activity3 img {
     object-fit: cover;
     height:130px;
-    width: 280px;
+    width: 270px;
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 12px;
-
 }
 
+.card-activity3 figure{
+    margin-bottom: 25px;
+}
 
 /* FOOTER */
 
