@@ -1,4 +1,4 @@
-/*Définition des polices*/
+/*Police*/
 
 body {
     font-family: "Raleway", sans-serif;
@@ -15,13 +15,13 @@ body {
     padding: 2em;
 }
 /*Photos body*/
+
 figure a{
     text-decoration: none;
     color:black;
 }
 
-
-/*Navigation*/
+/*Header-Navigation*/
 
 header img {
     width: 95px;
@@ -67,22 +67,14 @@ h1, h2{
     line-height: 0.7em;
 }
 
+/*Pour la section hébergements et activités*/
 
 section {
     display: flex;
     flex-wrap: nowrap;
 }
+
 /*barre de recherche*/
-
-.recherche  {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: baseline;
-    border:none;
-    background-color: transparent;
-}
-
 
 .fa-map-marker-alt {
     color: black;
@@ -101,6 +93,15 @@ input {
     border-right: 10px;
 }
 
+.recherche  {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    border:none;
+    background-color: transparent;
+}
+
 .recherche h5 {
     color: white;
     font-size: 1em;
@@ -113,8 +114,6 @@ input {
 .fa-search {
     color: transparent;
 }
-
-
                 /*######*/
                 /*Filtres*/
                 /*######*/
@@ -125,18 +124,23 @@ input {
 #filtres h4{
     margin-right: 10px;
 }
+#filtres h6{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    margin:10px;
+}
     /*Encadrement des filtres de recherche*/
 
 button{
     display: flex;
-    font-weight: bold;
-    font-size: 1em;
     border-radius: 230px 200px 200px 200px;
     border: solid #dad3d37a 0.188em;
     background-color: white;
     padding: 0;
     margin: 5px;
-    height:63px;
+    height:58px;
+    padding: 4px 1px 0px 0px;
 }
 
 
@@ -148,30 +152,29 @@ button:hover {
 /*Icônes et encadrement filtres*/
 
 .encadrement1{
-    width: 16%;
+    width: 13%;
 }
 
 .encadrement2{
-    width: 13%;
+    width: 12%;
 }
 .encadrement3{
-    width: 16%;
+    width: 14%;
 }
 .encadrement4{
-    width: 20%;
+    width: 19%;
 }
 
 .fa-money-bill-wave {
     color: #0065fc;
     background-color: #deebff;
     padding: 23px 21px 20px 19px;
-    margin-right: 15px;
     border-radius: 50%;
+    margin: -6px;
 }
 
 .fa-money-bill-wave:hover{
     background-color:rgb(250, 250, 250);
-
 }
 
 .fa-child {
@@ -179,8 +182,8 @@ button:hover {
     color: #0065fc;
     background-color: #deebff;
     padding: 23px 24px 22px 24px;
-    margin-right: 15px;
     border-radius: 50%;
+    margin: -6px;
 }
 
 .fa-child:hover {
@@ -191,9 +194,9 @@ button:hover {
 .fa-heart {
     color: #0065fc;
     background-color: #deebff;
-    padding: 23px 23px 20px 19px;
-    margin-right: 15px;
+    padding: 23px 23px 20px 21px;
     border-radius: 50%;
+    margin: -6px;
 }
 
 .fa-heart:hover {
@@ -205,8 +208,8 @@ button:hover {
     color: #0065fc;
     background-color: #deebff;
     padding: 23px 23px 22px 21px;
-    margin-right: 15px;
     border-radius: 50%;
+    margin: -6px;
 }
 
 .fa-dog:hover {
