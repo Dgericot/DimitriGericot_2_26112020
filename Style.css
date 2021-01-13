@@ -121,28 +121,22 @@ input {
 
 #filtres{
     display: flex;
-    flex-wrap: nowrap;
 }
-
-    /*Encadrement des filtres de recherche*/
-
-#filtres button{
-    text-align: left;
-}
-
 #filtres h4{
     margin-right: 10px;
 }
+    /*Encadrement des filtres de recherche*/
 
-.encadrement {
+button{
+    display: flex;
     font-weight: bold;
     font-size: 1em;
-    border-radius: 200px 200px 200px 200px;
-    border: solid #f2f2f2 0.2em;
+    border-radius: 230px 200px 200px 200px;
+    border: solid #dad3d37a 0.188em;
     background-color: white;
-    width: 20%;
     padding: 0;
     margin: 5px;
+    height:63px;
 }
 
 
@@ -151,13 +145,28 @@ button:hover {
     background-color:#0065fc;
 }
 
+/*Icônes et encadrement filtres*/
+
+.encadrement1{
+    width: 16%;
+}
+
+.encadrement2{
+    width: 13%;
+}
+.encadrement3{
+    width: 16%;
+}
+.encadrement4{
+    width: 20%;
+}
 
 .fa-money-bill-wave {
     color: #0065fc;
     background-color: #deebff;
-    padding: 19px;
+    padding: 23px 21px 20px 19px;
     margin-right: 15px;
-    border-radius: 45%;
+    border-radius: 50%;
 }
 
 .fa-money-bill-wave:hover{
@@ -169,7 +178,7 @@ button:hover {
     object-fit: cover;
     color: #0065fc;
     background-color: #deebff;
-    padding: 19px;
+    padding: 23px 24px 22px 24px;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -182,7 +191,7 @@ button:hover {
 .fa-heart {
     color: #0065fc;
     background-color: #deebff;
-    padding: 19px;
+    padding: 23px 23px 20px 19px;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -195,7 +204,7 @@ button:hover {
 .fa-dog {
     color: #0065fc;
     background-color: #deebff;
-    padding: 19px;
+    padding: 23px 23px 22px 21px;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -210,6 +219,8 @@ button:hover {
     background-color: #0065fc;
     border-radius: 60%;
 }
+
+/*Hébergements et activités*/
 
 .fa-chart-line {
     padding-left: 135px;
@@ -343,6 +354,7 @@ aside {
     flex-direction: column;
     width: 20em;
     margin:0;
+    padding-top: 20px;
 }
 #populaires figure {
     border-radius: 25px 25px 25px 25px;
