@@ -301,11 +301,12 @@ figcaption p {
     padding-right: 35px;
     padding-left: 35px;
     padding-top: 20px;
+    width: 65%;
 }
 
 .hotel-card-picture{
     position: relative;
-    width: 16rem;
+    width: 14rem;
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
@@ -352,6 +353,7 @@ aside {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 60%;
     background-color: #f2f2f2;
 }
 
@@ -365,7 +367,9 @@ aside {
     width: 20em;
     margin:0;
     padding-top: 20px;
+    text-align: right;
 }
+
 #populaires figure {
     border-radius: 25px 25px 25px 25px;
     background-color: white;
@@ -390,7 +394,7 @@ aside {
 
 .hotel-card-picture2 {
     position:relative;
-    width: 100%;
+    width: 0rem;
     height: 2em;
     padding-bottom: 36.25%;
 }
@@ -614,17 +618,70 @@ footer a {
 
     /*Filtres*/
     
-    #filtres button {
+    #filtres {
         flex-wrap: wrap;
-        border-radius: 230px 200px 200px 230px;
-        border: solid #dad3d37a 0.188em;
-        background-color: white;
-        padding: 0;
-        margin: 6px;
-        height:47px;
-        padding: 5px 6px 0px 0px;
     }
-    
+    button {
+        justify-content: space-around;
+        border-radius: 230px 200px 200px 230px;
+        margin: 6px;
+        height: 39px;
+        
+    }
+    #filtres h6 {
+        font-size: 0.9em;
+    }
+
+    #filtres h4 {
+        font-size: 0.8em;
+    }
+
+    .fa-money-bill-wave {
+        padding: 12px 9px 9px 9px;
+        margin: -2px;
+    }
+
+    .encadrement1 {
+        width: 36%;
+    }
+
+    .fa-child{
+        padding: 10px 12px 9px 11px;
+        border-radius: 50%;
+        margin: -2px;
+    }
+
+    .encadrement2 {
+        width: 36%;
+        
+    }
+
+    .encadrement1 .encadrement2 {
+        order:1;
+    }
+
+    .fa-heart {
+        padding: 10px 12px 9px 11px;
+        border-radius: 50%;
+        margin: -2px;
+    }
+
+    .encadrement3 {
+        width: 36%;
+        order:2;
+    }
+
+    .fa-dog {
+        padding: 10px 12px 9px 11px;
+        border-radius: 50%;
+        margin: -2px;
+    }
+
+    .encadrement4 {
+        width: 40%;
+        order:3;
+    }
+
     /*Les plus populaires*/
 
     #populaires {
@@ -691,9 +748,11 @@ footer a {
     .activity h1 {
         margin-right: 50px;
     }
+
     h2 {
         margin:1em;
     }
+
     .activity img {
         width: 20rem;
         height: 9rem;
