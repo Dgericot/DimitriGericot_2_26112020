@@ -30,6 +30,7 @@ header img {
 .liens-menu {
     list-style-type: none;
     display: flex;
+    margin-left: auto;
 }
 
 header ul{
@@ -39,8 +40,7 @@ header ul{
 
 header {
     display: flex;
-    justify-content: space-between;
-
+    align-items: baseline;
 }
 
 header a {
@@ -293,15 +293,12 @@ figcaption p {
 
 
 .hotel-grid {
-    display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
     border-radius: 25px 25px 25px 25px;
     background-color: #f2f2f2;
     padding-right: 35px;
     padding-left: 35px;
     padding-top: 20px;
-    width: 65%;
 }
 
 .hotel-card-picture{
@@ -353,7 +350,7 @@ aside {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 60%;
+    width: 85%;
     background-color: #f2f2f2;
 }
 
