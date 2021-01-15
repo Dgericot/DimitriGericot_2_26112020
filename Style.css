@@ -131,95 +131,49 @@ input {
     text-align: center;
     margin:8px;
 }
-    /*Encadrement des filtres*/
 
-button {
+/*Icônes et encadrement filtres*/
+
+.filtres-bouton {
     display: flex;
-    justify-content: space-around;
-    border-radius: 230px 200px 200px 230px;
-    border: solid #dad3d37a 0.188em;
-    background-color: white;
-    padding: 0;
-    margin: 6px;
-    height:47px;
-    padding: 5px 6px 0px 0px;
+    flex-wrap: wrap;
 }
 
+.encadrement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px 30px 30px 30px;
+    border: solid #ccc6c67a 0.18em;
+    background-color: white;
+    margin: 6px;
+    height:47px;
+    padding: 5px 15px 5px 0;
+    align-items: center;
+    border-left: 0;
+}
 
-button:hover {
+.encadrement:hover {
     color: #deebff;
     background-color:#0065fc;
 }
 
-/*Icônes et encadrement filtres*/
-
-.encadrement1{
-    width: 13%;
-    padding-top: 6px;
+.encadrement span {
+    font-weight: bold;
+    margin-left: 10px;
 }
 
-.encadrement2{
-    width: 12%;
-    padding-top: 6px;
-}
-
-.encadrement3{
-    width: 14%;
-    padding-top: 6px;
-}
-
-.encadrement4{
-    width: 19%;
-    padding-top: 6px;
-}
-
-.fa-money-bill-wave {
+.encadrement .fas {
     color: #0065fc;
     background-color: #deebff;
-    padding: 20px 16px 16px 16px;
     border-radius: 50%;
-    margin: -10px;
+    height: 47px;
+    width:47px;
+    line-height: 47px;
+    font-size: 18px;
 }
 
-.fa-money-bill-wave:hover{
-    background-color:rgb(250, 250, 250);
-}
-
-.fa-child {
-    color: #0065fc;
-    background-color: #deebff;
-    padding: 20px 21px 16px 20px;
-    border-radius: 54%;
-    margin: -10px;
-}
-
-.fa-child:hover {
-    background-color:rgb(250, 250, 250);
-
-}
-
-.fa-heart {
-    color: #0065fc;
-    background-color: #deebff;
-    padding: 20px 19px 16px 19px;
-    border-radius: 50%;
-    margin: -10px;
-}
-
-.fa-heart:hover {
-    background-color:rgb(250, 250, 250);
-
-}
-
-.fa-dog {
-    color: #0065fc;
-    background-color: #deebff;
-    padding: 19px 18px 18px 19px;
-    border-radius: 60%;
-    margin: -10px;
-}
-
-.fa-dog:hover {
+.encadrement .fas:hover{
     background-color:rgb(250, 250, 250);
 
 }
@@ -238,9 +192,10 @@ button:hover {
 
 .fa-star {
     color:  #0065fc;
+    font-size: 0.7em;
 }
 
-.far.fa-star {
+.fa-star.blank {
     color:  #f2f2f2;
 }
 
@@ -303,7 +258,7 @@ figcaption p {
 
 .hotel-card-picture{
     position: relative;
-    width: 14rem;
+    width: 16rem;
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
@@ -611,12 +566,6 @@ footer a {
         padding-bottom: 0;
     }
 
-    /*
-    .fas{
-        display: inline-block;
-        text-align: center;
-    }*/
-
     .fa-search {
         color: white;
     }
@@ -624,67 +573,15 @@ footer a {
     /*Filtres*/
     
     #filtres {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-    button {
-        justify-content: space-around;
-        border-radius: 230px 200px 200px 230px;
-        margin: 6px;
-        height: 39px;
-        
-    }
-    #filtres h6 {
+
+    #filtres span {
         font-size: 0.9em;
     }
 
     #filtres h4 {
         font-size: 0.8em;
-    }
-
-    .fa-money-bill-wave {
-        padding: 12px 9px 9px 9px;
-        margin: -2px;
-    }
-
-    .encadrement1 {
-        width: 36%;
-    }
-
-    .fa-child{
-        padding: 10px 12px 9px 11px;
-        border-radius: 50%;
-        margin: -2px;
-    }
-
-    .encadrement2 {
-        width: 36%;
-        
-    }
-
-    .encadrement1 .encadrement2 {
-        order:1;
-    }
-
-    .fa-heart {
-        padding: 10px 12px 9px 11px;
-        border-radius: 50%;
-        margin: -2px;
-    }
-
-    .encadrement3 {
-        width: 36%;
-        order:2;
-    }
-
-    .fa-dog {
-        padding: 10px 12px 9px 11px;
-        border-radius: 50%;
-        margin: -2px;
-    }
-
-    .encadrement4 {
-        width: 40%;
-        order:3;
     }
 
     /*Les plus populaires*/
