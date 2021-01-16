@@ -24,7 +24,7 @@ figure a{
 /*Header-Navigation*/
 
 header img {
-    width: 95px;
+    width: 90px;
 }
 
 .liens-menu {
@@ -64,7 +64,7 @@ header a {
 
 h1, h2{
     font-weight: bold;
-    font-size:1.15em;
+    font-size:1.1em;
     line-height: 0.7em;
 }
 
@@ -75,7 +75,12 @@ section {
     flex-wrap: nowrap;
 }
 
-/*barre de recherche*/
+/*barre de recherche, titre et p*/
+
+.adaptation-responsive p {
+    margin:0;
+    font-size: 0.9em ;
+}
 
 .fa-map-marker-alt {
     color: black;
@@ -87,11 +92,15 @@ section {
 }
 
 input {
-    font-weight:bold;
     border:2px solid #f2f2f2;
     border-color: #f2f2f2;
     padding: 15px;
     border-right: 10px;
+}
+input::placeholder {
+    color:black;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .recherche  {
@@ -121,15 +130,12 @@ input {
 
 #filtres{
     display: flex;
+    margin-bottom: 20px;
 }
+
 #filtres h4{
     margin-right: 10px;
-}
-#filtres h6{
-    font-size: 1.15em;
-    font-weight: bold;
-    text-align: center;
-    margin:8px;
+    font-size: 1em;
 }
 
 /*Icônes et encadrement filtres*/
@@ -161,6 +167,7 @@ input {
 .encadrement span {
     font-weight: bold;
     margin-left: 10px;
+    font-size: 1.17em;
 }
 
 .encadrement .fas {
@@ -254,6 +261,7 @@ figcaption p {
     padding-right: 35px;
     padding-left: 35px;
     padding-top: 20px;
+    margin-top: 20px;
 }
 
 .hotel-card-picture{
@@ -510,7 +518,8 @@ footer a {
 
     #logo img {
         flex-wrap: wrap;
-        width:65%;
+        width:55%;
+        padding: 0 1rem;
         order:1;
     }
 
@@ -540,10 +549,10 @@ footer a {
     .menu3 a {
         flex-wrap: wrap;
         width: 50%;
-        font-size: 0.8em;   
+        font-size: 0.7em;   
         order:2;
-        font-size: 0.8em;   
         color: #0065fc;
+        padding: 0 1rem;
     }
 
     /*Barre de recherche*/
@@ -554,6 +563,9 @@ footer a {
         padding-top: 15px;
     }
     
+    input::placeholder {
+        font-size: 1em;
+    }
     .recherche {
         display: flex;
     }
