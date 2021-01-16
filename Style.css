@@ -490,7 +490,7 @@ footer a {
     }
 
     h2{
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     figcaption{
@@ -591,6 +591,12 @@ footer a {
         margin-top: 0;
     }
 
+    /*Section populaires et hébergements*/
+    
+    section {
+        flex-wrap: wrap;
+    }
+
     /*Les plus populaires*/
 
     aside {
@@ -607,77 +613,63 @@ footer a {
         margin-left:0;
     }
     
-    /*Hébergements à Marseille*/
+    /*Hébergements*/
 
     .hotel-grid {
-        flex-direction: column;
         order:2;
         border-radius: 10px 5px 10px 5px;
-        border: 1px solid black;
         border: 2px;
         padding-top:10px;
         background-color:transparent ;
         padding-left: 0;
     }
     
+    .hotel-grid figure {
+        margin: 10px;
+    }
     .hotel-card-picture{
         width: 20rem;
         padding-bottom: 40.25%;
     }
 
-    section {
-        flex-wrap: wrap;
-    }
-    
-    .hotel-card1 {
+    .hotel-cards {
         flex-direction: column;
     }
 
-    .hotel-card2 {
-        flex-direction: column;
-    }  
-
-    .hotel-card figure{
-        margin-top:5px;
-        margin-left:5px;
-        margin-right:5px;
-    }
-
-    .hotel-grid figcaption{
-        line-height: 0.5;
+    .hotel-cards figure{
+        width:auto;
     }
 
     /*Activités*/
 
+    /*id de la section*/
+
+    #act-Marseille {
+        margin:0;
+    }
     .activity {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         order:3;
-        width: 100%;
-        margin: auto;
-        justify-content: space-around;
-    }
-
-    .activity h1 {
-        margin-right: 50px;
-    }
-
-    h2 {
-        margin:1em;
     }
 
     .activity img {
         width: 20rem;
         height: 9rem;
     }
+
+    /*Vieux port et Parc national des Calanques*/ 
+    
     .card-activity1 figure {
         margin-bottom: 20px;
-        margin-top:0;
     }
+
+    /*Fort de Pomègues et Ile du Frioul*/
+
     .card-activity2 figure {
-        margin-bottom:28px;
+        margin-bottom:18px;
     }
+
     #fort figure {
         margin-bottom: 10px;
     }
@@ -693,10 +685,7 @@ footer a {
     /*Footer*/
 
     .footer-sections {
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        background-color: #f2f2f2;
     }
     .footer-box {
         flex-direction: column;
