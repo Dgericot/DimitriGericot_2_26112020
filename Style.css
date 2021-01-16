@@ -514,8 +514,9 @@ footer a {
         order:1;
     }
 
+    /*Les 3 liens du menu*/
+
     .liens-menu {
-        justify-content: flex-start;
         width: 100%;
         order: 3;
         font-size: 0.8em;
@@ -527,22 +528,18 @@ footer a {
     }
 
     .menu1 a {
-        color: #0065fc;
         border-bottom: 2px solid #0065fc;
         border-top: none;
     }
 
     .menu2 a {
-        color: black;
         border-bottom: 2px solid #f2f2f2;
     }
 
     .menu3 a {
-        flex-wrap: wrap;
         width: 50%;
         font-size: 0.7em;   
         order:2;
-        color: #0065fc;
         padding: 0 1rem;
     }
 
@@ -569,7 +566,6 @@ footer a {
     .recherche h5 {
         color: transparent;
         border-radius: 10px 10px 10px 10px;
-        background-color: #0065fc;
         width: 14px;
         height: 14px;
         line-height: 14px;
@@ -597,17 +593,17 @@ footer a {
 
     /*Les plus populaires*/
 
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
     #populaires {
         flex-direction: column;
         order:1;
-        border: 2px;
-        background-color: #f2f2f2;
         border-radius:0px;
-        margin-top:20px;
         padding-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        width:auto;
+        width:100%;
         margin-left:0;
     }
     
