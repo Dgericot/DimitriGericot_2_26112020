@@ -691,7 +691,92 @@ footer a {
         flex-direction: column;
     }
 }
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {*/
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .container {
+    padding: 5px;
+    }
+
+    /*header*/ 
+        
+    .liens-menu {
+        width: auto;
+        order:0;
+    }
+
+    /*Populaires*/
+
+    aside {
+        width: auto;
+    }
+    #populaires {
+        order:1;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #populaires figure {
+        display: block;
+        padding:8px;
+    }
+    
+    .hotel-card-popular img {
+        width:15rem; 
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .fa-chart-line {
+        padding-left: 30px;
+    }
+
+    #populaires h2 {
+        line-height: 2.5em;
+        font-size:1.3em;
+    }
+    
+    /*Hébergements*/
+    .hotel-grid {
+        padding: 0;
+    }
+
+    .hotel-grid h2 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .hotel-grid h4 {
+        text-align: center;
+    }
+
+    .hotel-cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*activités*/
+
+    .activity {
+        flex-direction: row;
+    }
+
+    .card-activity1 img {
+        height:360px ;
+    }
+
+    #act-Marseille h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    /*footer*/
+
+    .footer-box {
+        flex-direction: row;
+    }
+
+    }
 @media screen and (min-width: 981px) {
     .footer-sections {
         width: 30%;
