@@ -16,7 +16,7 @@ body {
 }
 /*Photos body*/
 
-figure a{
+figure a {
     text-decoration: none;
     color:black;
 }
@@ -33,7 +33,7 @@ header img {
     margin-left: auto;
 }
 
-header ul{
+header ul {
     list-style-type: none;
     display: flex;
 }
@@ -62,7 +62,7 @@ header a {
 
 /*Les différents titres*/
 
-h1, h2{
+h1, h2 {
     font-weight: bold;
     font-size:1.1em;
     line-height: 0.7em;
@@ -128,12 +128,12 @@ input::placeholder {
                 /*Filtres*/
                 /*######*/
 
-#filtres{
+#filtres {
     display: flex;
     margin-bottom: 20px;
 }
 
-#filtres h4{
+#filtres h4 {
     margin-right: 10px;
     font-size: 1em;
 }
@@ -269,13 +269,13 @@ figcaption p {
     overflow: hidden;
 }
 
-.hotel-cards{
+.hotel-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.hotel-grid figure{
+.hotel-grid figure {
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     box-shadow:  0px 2px 20px rgba(0, 0, 0, 0.3);
@@ -307,11 +307,11 @@ aside {
     background-color: #f2f2f2;
 }
 
-#populaires h1{
+#populaires h1 {
     padding-left: 15px;
 }
 
-#populaires figcaption{
+#populaires figcaption {
     display: flex;
     flex-direction: column;
     width: 20em;
@@ -371,18 +371,18 @@ height: 100%;
     margin-bottom: auto;
 }
 
-.activity figcaption{
+.activity figcaption {
     padding-bottom: 15px;
 }
 
-.activity figure{
+.activity figure {
     box-shadow:  0px 1px 10px rgba(0, 0, 0, 0.3);
     }
 
 
 /*Images activity*/
 
-.activity-picture{
+.activity-picture {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -404,19 +404,19 @@ height: 100%;
     margin-bottom: 12px;
 }
 
-.card-activity2 figure{
+.card-activity2 figure {
     margin-bottom: 36px;
 }
 
-#frioul img{
+#frioul img {
     height: 90px;
 }
 
-#fort img{
+#fort img {
     height: 160px; 
 }
 
-#frioul figcaption{
+#frioul figcaption {
     padding-top: 27px;
 }
 
@@ -428,13 +428,13 @@ height: 100%;
     margin-bottom: 12px;
 }
 
-.card-activity3 figure{
+.card-activity3 figure {
     margin-bottom: 25px;
 }
 
 /* FOOTER */
 
-footer h1{
+footer h1 {
     font-size: 1.10em;
 }
 .footer-box {
@@ -459,7 +459,8 @@ footer a {
     list-style-type: none;
     text-align: left;
     line-height: 2em;
-}
+} 
+
 .footer-sections ul {
     padding-left: 0;
 }
@@ -489,15 +490,16 @@ footer a {
         font-size:1em;
     }
 
-    h2{
+    h2 {
         font-size: 1.1em;
+        padding: 10px;
     }
     
-    figcaption{
+    figcaption {
         font-size: 0.8em;
     }
 
-    p{
+    p {
         font-size:0.8em;
     }
 
@@ -608,11 +610,28 @@ footer a {
         flex-direction: column;
         order:1;
         border-radius:0px;
-        padding-bottom: 10px;
+        padding: 1px;
         width:100%;
         margin-left:0;
     }
+
+    #populaires figure {
+        width: 95%;
+        margin-top: 0;
+    }
+
+    #populaires figcaption {
+        line-height: 1.3em;
+    }
+
+    .hotel-card-popular figure {
+        margin-bottom: 15px;
+    }
     
+    .hotel-card-picture2 {
+        height:0.9em;
+    }
+
     /*Hébergements*/
 
     .hotel-grid {
@@ -627,6 +646,7 @@ footer a {
     .hotel-grid figure {
         margin: 10px;
     }
+
     .hotel-card-picture{
         width: 20rem;
         padding-bottom: 40.25%;
@@ -737,6 +757,7 @@ footer a {
     }
     
     /*Hébergements*/
+    
     .hotel-grid {
         padding: 0;
     }
