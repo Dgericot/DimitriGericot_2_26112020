@@ -107,7 +107,7 @@ input::placeholder {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
     background-color: transparent;
 }
 
@@ -469,6 +469,8 @@ footer a {
                         /*Partie responsive*/
                         /*#################*/
 
+/*Responsive mobile*/
+
 @media screen and (max-width: 980px) {
     
     #bloc_page {
@@ -494,7 +496,7 @@ footer a {
         font-size: 1.1em;
         padding: 10px;
     }
-    
+
     figcaption {
         font-size: 0.8em;
     }
@@ -548,9 +550,7 @@ footer a {
     /*Barre de recherche*/
 
     .fa-map-marker-alt {
-        padding:15px;
-        padding-bottom: 15px;
-        padding-top: 12px;
+        padding:14px;
     }
     
     input {
@@ -562,15 +562,16 @@ footer a {
     }
 
     .recherche {
-        display: flex;
+        align-items: center;
     }
     
-    .recherche h5 {
+    .recherche h5 { 
         color: transparent;
         border-radius: 10px 10px 10px 10px;
-        width: 14px;
+        width: 16px;
         height: 14px;
-        line-height: 14px;
+        line-height: 9px;
+        padding: 6px 11px 22px 13px;
     }
 
     .fa-search {
@@ -616,7 +617,7 @@ footer a {
     }
 
     #populaires figure {
-        width: 95%;
+        width: 90%;
         margin-top: 0;
     }
 
@@ -630,6 +631,7 @@ footer a {
     
     .hotel-card-picture2 {
         height:0.9em;
+        padding-bottom: 39.25%;
     }
 
     /*Hébergements*/
@@ -660,6 +662,10 @@ footer a {
         width:auto;
     }
 
+    .hotel-grid h4 {
+        padding: 10px;
+    }
+
     /*Activités*/
 
     /*id de la section*/
@@ -667,6 +673,7 @@ footer a {
     #act-Marseille {
         margin:0;
     }
+
     .activity {
         flex-wrap: wrap;
         flex-direction: column;
@@ -711,8 +718,7 @@ footer a {
         flex-direction: column;
     }
 }
-/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {*/
-
+    /*Responsive tablette*/
     @media (min-width: 768px) and (max-width: 1024px) {
     
     .container {
@@ -735,11 +741,13 @@ footer a {
         order:1;
         display: flex;
         flex-direction: row;
+        background-color: transparent;
     }
 
     #populaires figure {
         display: block;
-        padding:8px;
+        padding:2px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
     }
     
     .hotel-card-popular img {
@@ -754,6 +762,7 @@ footer a {
     #populaires h2 {
         line-height: 2.5em;
         font-size:1.3em;
+        padding: 0;
     }
     
     /*Hébergements*/
@@ -792,12 +801,16 @@ footer a {
     }
     
     /*footer*/
+    footer {
+        background-color: transparent;
+    }
 
     .footer-box {
         flex-direction: row;
     }
 
     }
+    
 @media screen and (min-width: 981px) {
     .footer-sections {
         width: 30%;
