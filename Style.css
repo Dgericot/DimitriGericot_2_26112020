@@ -98,6 +98,7 @@ input {
     padding: 15px;
     border-right: 10px;
 }
+
 input::placeholder {
     color:black;
     font-weight: bold;
@@ -296,7 +297,7 @@ figcaption p {
 
 aside {
     padding-left:15px;
-    width:45%;
+    width:46%;
 }
 
 #populaires {
@@ -440,6 +441,7 @@ height: 100%;
 footer h1 {
     font-size: 1.10em;
 }
+
 .footer-box {
     display: flex;
     flex-direction: row;
@@ -743,6 +745,7 @@ footer a {
     aside {
         width: auto;
     }
+
     #populaires {
         order:1;
         display: flex;
@@ -761,6 +764,10 @@ footer a {
     .hotel-card-popular img {
         width:15rem; 
         border-radius: 15px 15px 15px 15px;
+    }
+
+    .hotel-card-picture2 {
+        overflow: unset;
     }
 
     .fa-chart-line {
@@ -819,31 +826,6 @@ footer a {
     }
 
     }
-
-    @media (min-width: 1025px) and (max-width: 1280px){
-
-        .container {
-            max-width: 1280px;
-        }
-        
-        .hotel-grid figure {
-            width: 25%;
-        }
-        
-        aside {
-            width: 35%;
-        }
-
-        #populaires {
-            display: block;
-            margin: 0;
-        }
-
-        .footer-sections {
-            width: 100%;
-        }
-        
-        }
 
 @media screen and (min-width: 981px) {
     .footer-sections {
