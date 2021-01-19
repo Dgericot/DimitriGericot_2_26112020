@@ -473,11 +473,13 @@ footer a {
                         /*Partie responsive*/
                         /*#################*/
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
 
 
 .footer-sections {
     width: 100%;
+}
+
 }
 
 /*Responsive mobile*/
