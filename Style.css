@@ -345,6 +345,7 @@ aside {
     width: 55%;
     height: 1.9em;
     padding-bottom: 36.25%;
+    overflow: hidden;
 }
 
 .hotel-card-picture2 img { 
@@ -472,15 +473,6 @@ footer a {
                         /*#################*/
                         /*Partie responsive*/
                         /*#################*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-
-.footer-sections {
-    width: 100%;
-}
-
-}
 
 /*Responsive mobile*/
 
@@ -733,7 +725,7 @@ footer a {
 }
     /*Responsive tablette*/
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px){
     
     .container {
     padding: 5px;
@@ -827,6 +819,31 @@ footer a {
     }
 
     }
+
+    @media (min-width: 1025px) and (max-width: 1280px){
+
+        .container {
+            max-width: 1280px;
+        }
+        
+        .hotel-grid figure {
+            width: 25%;
+        }
+        
+        aside {
+            width: 35%;
+        }
+
+        #populaires {
+            display: block;
+            margin: 0;
+        }
+
+        .footer-sections {
+            width: 100%;
+        }
+        
+        }
 
 @media screen and (min-width: 981px) {
     .footer-sections {
