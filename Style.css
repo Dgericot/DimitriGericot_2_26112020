@@ -331,9 +331,8 @@ aside {
 }
 
 .hotel-card-popular img {
-    margin: 5px;
     border-radius: 25px 0px 0px 25px;
-    width:120px;
+    width:140px;
     height: 150px; 
 }
 
@@ -344,6 +343,7 @@ aside {
 .hotel-card-picture2 {
     position:relative;
     width: 50%;
+    padding: 5px;
     height: 1.9em;
     padding-bottom: 36.25%;
     overflow: hidden;
