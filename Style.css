@@ -390,51 +390,81 @@ height: 100%;
     position: relative;
     width: 100%;
     overflow: hidden;
+    flex-grow: 1;
 }
 
-.card-activity1 img {    
+.activity-picture a {
+    display: block;
+    height: 100%;
+}
+
+/*.card-activity1 img {    
     object-fit: cover;
     height:340px;
     width:270px;
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 12px;
+}*/
+
+.card-activity {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
 }
 
-.card-activity2 img {
+#activity-xl figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+#activity-xl img {
+    object-fit: cover;
+    height:340px;
+    border-radius: 25px 25px 0px 0px;
+    margin-bottom: 12px;
+}
+
+/*.card-activity2 img {
     object-fit:cover;
     height:140px;
     width: 270px;
     border-radius:25px 25px 0px 0px;
     margin-bottom: 12px;
-}
+}*/
 
-.card-activity2 figure {
+/*.card-activity2 figure {
     margin-bottom: 36px;
+}*/
+
+#fort img {
+    height: 160px;
+    object-fit: cover; 
 }
 
 #frioul img {
     height: 90px;
-}
-
-#fort img {
-    height: 160px; 
+    object-fit: cover;
 }
 
 #frioul figcaption {
     padding-top: 27px;
 }
 
-.card-activity3 img {
+/*.card-activity3 img {
     object-fit: cover;
     height:130px;
     width: 270px;
     border-radius: 25px 25px 0px 0px;
     margin-bottom: 12px;
-}
+}*/
 
-.card-activity3 figure {
+/*.card-activity3 figure {
     margin-bottom: 25px;
-}
+}*/
+
 
 /* FOOTER */
 
