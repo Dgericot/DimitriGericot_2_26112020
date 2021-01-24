@@ -12,7 +12,7 @@ body {
 .container {
     max-width: 1400px;
     margin: auto;
-    padding: 2em;
+    padding: 0 2em;
 }
 
 /*Photos body*/
@@ -37,23 +37,24 @@ header img {
 header ul {
     list-style-type: none;
     display: flex;
+    margin:0;
 }
 
 header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 header a {
     color: black;
     text-decoration: none;
     padding:20px;
+    display: block;
 }
 
 .menu1 a {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 30px;
 }
 
 .menu3 a {
@@ -120,6 +121,7 @@ input::placeholder {
     border-radius: 0px 15px 15px 0px;
     border-color: #f2f2f2;
     padding: 14px;
+    margin-left: -10px;
     background-color: #0065fc;
 }
 
@@ -485,6 +487,7 @@ footer h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding: 2em;
     justify-content: space-between;
     align-content: space-between;
 }
