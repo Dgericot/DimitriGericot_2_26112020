@@ -42,7 +42,6 @@ header ul {
 
 header {
     display: flex;
-    align-items: center;
 }
 
 header a {
@@ -253,6 +252,7 @@ figcaption {
 figcaption p {
     font-weight:normal;
     font-size: 0.9em;
+    line-height: 0.3em;
 }
                                     /*#######################*/
 
@@ -308,7 +308,7 @@ aside {
     border-radius: 25px 25px 25px 25px;
     margin-left: 20px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 20px 20px 35px 20px;
     background-color: #f2f2f2;
 }
 
@@ -319,7 +319,7 @@ aside {
 #populaires figcaption {
     display: flex;
     flex-direction: column;
-    width: 20em;
+    width: 10em;
     margin:0;
     padding-top: 20px;
     text-align: left;
@@ -331,23 +331,24 @@ aside {
     background-color: white;
     padding-bottom: 4px;
     margin-top: 25px;
+    margin-right: 65px;
 }
 
 .hotel-card-popular img {
     border-radius: 25px 0px 0px 25px;
     width:140px;
-    height: 150px; 
 }
 
 .hotel-card-popular figure {
     margin-bottom: 35px;
+    height: 10em;
 }
 
 .hotel-card-picture2 {
     position:relative;
-    width: 50%;
-    padding: 5px;
-    height: 1.9em;
+    width: 45%;
+    padding: 5px 5px 5px;
+    height: 1.3em;
     padding-bottom: 36.25%;
     overflow: hidden;
 }
@@ -680,7 +681,6 @@ footer a {
     }
 
     #populaires figure {
-        width: 90%;
         margin-top: 0;
     }
 
@@ -796,37 +796,46 @@ footer a {
     }
 
     #populaires {
-        order:1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: row;
+        margin-top: 0;
+        padding: 5px;
         background-color: transparent;
     }
 
+    #tablette {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hotel-card-popular figure {
+        margin: 0;
+    }
     #populaires figure {
         display: block;
-        padding:1px;
+        padding: 0px;
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
     }
     
     .hotel-card-popular img {
-        width:15rem; 
+        width:13rem; 
         border-radius: 15px 15px 15px 15px;
     }
 
     .hotel-card-picture2 {
         overflow: unset;
+        height: 1.9em;
+        padding-bottom: 56.25%;
+        margin: 17px;
     }
 
     .fa-chart-line {
-        padding: 30px;
+        padding-left: 30px;
     }
 
     #populaires h2 {
-        line-height: 9.5em;
         font-size:1.3em;
         padding: 0;
+        width: 100%;
+        text-align: center;
     }
 
     /*Hébergements*/
