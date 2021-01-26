@@ -811,6 +811,7 @@ footer a {
     .hotel-card-popular figure {
         margin: 0;
     }
+
     #populaires figure {
         display: block;
         padding: 0px 16px 105px 0px;
@@ -872,6 +873,10 @@ footer a {
         flex-wrap: wrap;
     }
 
+    .hotel-cards figure {
+        width: 29%;
+    }
+
     /*activités*/
 
     .activity {
@@ -895,8 +900,12 @@ footer a {
 
     }
 
-@media screen and (min-width: 981px) {
+    @media screen and (max-width: 767px) {
+
+    }
+
+    @media screen and (min-width: 981px) {
     .footer-sections {
         width: 30%;
     }
-}
+    }
