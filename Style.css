@@ -902,6 +902,18 @@ footer a {
 
     @media screen and (max-width: 767px) {
 
+        #populaires figure {
+            margin-right: 0;
+        }
+
+        .hotel-card-popular figure {
+            height: 100%;
+        }
+
+        .hotel-card-popular img {
+            width: 100%;
+        }
+
     }
 
     @media screen and (min-width: 981px) {
