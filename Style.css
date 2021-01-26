@@ -706,6 +706,8 @@ footer a {
         padding-top:10px;
         background-color:transparent ;
         padding-left: 0;
+        padding-right: 0;
+        width: 100%;
     }
     
     .hotel-grid figure {
@@ -713,12 +715,12 @@ footer a {
     }
 
     .hotel-card-picture{
-        width: 20rem;
         padding-bottom: 40.25%;
     }
 
     .hotel-cards {
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .hotel-cards figure{
@@ -867,6 +869,7 @@ footer a {
     .hotel-cards {
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     /*activités*/
