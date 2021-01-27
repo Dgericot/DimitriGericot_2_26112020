@@ -586,6 +586,7 @@ footer a {
 
     header li {
         width: 50%;
+        margin-top: 10px;
     }
 
     header a {
