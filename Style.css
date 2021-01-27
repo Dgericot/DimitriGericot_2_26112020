@@ -66,8 +66,12 @@ header a {
 
 h1, h2 {
     font-weight: bold;
-    font-size:1.1em;
+    font-size:1.3em;
     line-height: 0.7em;
+}
+
+h2 {
+    padding-left: 12px;
 }
 
 /*Pour la section hébergements et activités*/
@@ -90,7 +94,7 @@ section {
     background-color:  #f2f2f2;
     padding: 16px;
     padding-bottom: 18px;
-    padding-top:15px;
+    padding-top: 16px;
 }
 
 input {
@@ -120,7 +124,7 @@ input::placeholder {
     border:none;
     border-radius: 0px 15px 15px 0px;
     border-color: #f2f2f2;
-    padding: 14px;
+    padding: 15px;
     margin-left: -10px;
     background-color: #0065fc;
 }
@@ -198,7 +202,7 @@ input::placeholder {
 /*Hébergements et activités*/
 
 .fa-chart-line {
-    padding-left: 135px;
+    padding-left: 160px;
 }
 
 .fa-star {
@@ -329,26 +333,23 @@ aside {
     display: flex;
     border-radius: 25px 25px 25px 25px;
     background-color: white;
-    padding-bottom: 4px;
     margin-top: 25px;
-    margin-right: 65px;
 }
 
 .hotel-card-popular img {
     border-radius: 25px 0px 0px 25px;
-    width:140px;
+    width:9em;
 }
 
 .hotel-card-popular figure {
-    margin-bottom: 35px;
-    height: 10em;
+    margin-bottom: 40px;
 }
 
 .hotel-card-picture2 {
     position:relative;
-    width: 45%;
+    width: 43%;
     padding: 5px 5px 5px;
-    height: 1.3em;
+    height: 1em;
     padding-bottom: 36.25%;
     overflow: hidden;
 }
@@ -687,6 +688,8 @@ footer a {
 
     #populaires figcaption {
         line-height: 1.3em;
+        padding-top: 0;
+        margin: 15px;
     }
 
     .hotel-card-popular figure {
@@ -694,8 +697,9 @@ footer a {
     }
     
     .hotel-card-picture2 {
-        height:0.9em;
-        padding-bottom: 39.25%;
+        height:100%;
+        width: 30%;
+        padding-bottom: 33.25%;
     }
 
     /*Hébergements*/
@@ -809,13 +813,9 @@ footer a {
         justify-content: center;
     }
 
-    .hotel-card-popular figure {
-        margin: 0;
-    }
-
     #populaires figure {
         display: block;
-        padding: 0px 16px 105px 0px;
+        padding: 0px 16px 16px 0px;
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
         margin-right: 20px;
     }
@@ -848,7 +848,7 @@ footer a {
 
     #populaires h2 {
         font-size:1.3em;
-        padding: 0;
+        padding: 15px;
         width: 100%;
         text-align: center;
     }
