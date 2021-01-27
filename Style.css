@@ -564,7 +564,7 @@ footer a {
 
     #logo img {
         flex-wrap: wrap;
-        width:50%;
+        width:60%;
         padding: 0 1rem;
         order:1;
     }
@@ -609,7 +609,7 @@ footer a {
         width: 50%;
         font-size: 0.8em;   
         order:2;
-        padding: 0 1rem;
+        padding: 10px 1rem;
     }
 
     /*Barre de recherche*/
