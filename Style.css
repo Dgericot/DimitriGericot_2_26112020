@@ -77,8 +77,11 @@ h2 {
                     /*Pour la section hébergements et activités*/
 
 section {
-    display: flex;
     flex-wrap: nowrap;
+}
+
+.hebergements {
+    display: flex;
 }
 
 /*barre de recherche, titre et p*/
@@ -196,7 +199,7 @@ input::placeholder {
 .fa-info-circle {
     color: white;
     background-color: #0065fc;
-    border-radius: 60%;
+    border-radius: 50%;
 }
 
 /*Hébergements et activités*/
@@ -302,10 +305,6 @@ figcaption p {
 
                                 /*section aside Les plus populaires*/
 
-aside {
-    padding-left:15px;
-    width:50%;
-}
 
 #populaires {
     flex-direction: column;
@@ -627,61 +626,6 @@ footer a {
         margin-top: 0;
     }
 
-                            /*Section populaires et hébergements*/
-    
-    section {
-        flex-wrap: wrap;
-    }
-
-    /*Les plus populaires*/
-
-    aside {
-        width: 100%;
-        padding: 0;
-    }
-
-    #populaires {
-        flex-direction: column;
-        order:1;
-        border-radius:0px;
-        padding: 1px;
-        width:100%;
-        margin-left:0;
-    }
-
-    #populaires figure {
-        margin-top: 0;
-    }
-
-    #populaires figcaption {
-        line-height: 1.3em;
-        padding-top: 0;
-        margin: 15px;
-    }
-
-    .hotel-card-popular figure {
-        margin-bottom: 15px;
-    }
-    
-    .hotel-card-picture2 {
-        height:100%;
-        width: 30%;
-        padding-bottom: 33.25%;
-    }
-
-                                            /*Hébergements*/
-
-    .hotel-grid {
-        order:2;
-        border-radius: 10px 5px 10px 5px;
-        border: 2px;
-        padding-top:10px;
-        background-color:transparent ;
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-    }
-    
     .hotel-grid figure {
         margin: 10px;
     }
@@ -703,7 +647,7 @@ footer a {
         padding: 10px;
     }
 
-                                        /*Activités*/
+                                    /*Activités*/
 
     /*id de la section*/
 
@@ -751,7 +695,6 @@ footer a {
         object-fit: cover;
     }
 
-
     /*Footer*/
 
     .footer-sections {
@@ -761,6 +704,8 @@ footer a {
         flex-direction: column;
     }
 }
+
+
                                 /*Responsive tablette*/
 
     @media (min-width: 768px) and (max-width: 1024px){
@@ -769,21 +714,13 @@ footer a {
     padding: 5px;
     }
         
-                                        /*Populaires*/
+                                /*Populaires*/
 
-    aside {
-        width: auto;
-    }
 
     #populaires {
         margin-top: 0;
         padding: 5px;
         background-color: transparent;
-    }
-
-    #tablette {
-        display: flex;
-        justify-content: center;
     }
 
     #populaires figure {
@@ -826,7 +763,7 @@ footer a {
         text-align: center;
     }
 
-                                        /*Hébergements*/
+                                /*Hébergements*/
     
     .hotel-grid {
         padding: 0;
@@ -851,7 +788,64 @@ footer a {
         width: 29%;
     }
 
-                                        /*activités*/
+    /*Les plus populaires*/
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    #tablette {
+        display: flex;
+        justify-content: center;
+    }
+
+    #populaires {
+        flex-direction: column;
+        order:1;
+        border-radius:0px;
+        padding: 1px;
+        width:100%;
+        margin-left:0;
+    }
+
+    #populaires figure {
+        margin-top: 0;
+    }
+
+    #populaires figcaption {
+        line-height: 1.3em;
+        padding-top: 0;
+        margin: 15px;
+    }
+
+    .hotel-card-popular {
+        width: 30%;
+    }
+    
+    .hotel-card-popular figure {
+        margin-bottom: 15px;
+    }
+    
+    .hotel-card-picture2 {
+        height:100%;
+        width: 30%;
+        padding-bottom: 33.25%;
+    }
+
+                                /*Hébergements*/
+
+    .hotel-grid {
+        order:2;
+        border-radius: 10px 5px 10px 5px;
+        border: 2px;
+        padding-top:10px;
+        background-color:transparent ;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+                                /*activités*/
 
     .activity {
         flex-direction: row;
@@ -872,6 +866,12 @@ footer a {
         flex-direction: row;
     }
 
+    }
+
+    @media screen and (max-width:1024px) {
+        .hebergements {
+            flex-direction: column;
+        }
     }
 
     @media screen and (max-width: 767px) {
