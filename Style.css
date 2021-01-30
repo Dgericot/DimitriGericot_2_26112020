@@ -309,22 +309,16 @@ figcaption p {
 #populaires {
     flex-direction: column;
     border-radius: 25px 25px 25px 25px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 20px;
-    padding: 20px 20px 35px 20px;
+    padding: 20px 20px 60px 20px;
     background-color: #f2f2f2;
-}
-
-#populaires h1 {
-    padding-left: 15px;
 }
 
 #populaires figcaption {
     display: flex;
     flex-direction: column;
-    width: 10em;
-    margin:0;
-    padding-top: 20px;
+    width: 22rem;
     text-align: left;
 }
 
@@ -337,19 +331,18 @@ figcaption p {
 
 .hotel-card-popular img {
     border-radius: 25px 0px 0px 25px;
-    width:9em;
 }
 
 .hotel-card-popular figure {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .hotel-card-picture2 {
     position:relative;
-    width: 43%;
-    padding: 5px 5px 5px;
-    height: 1em;
-    padding-bottom: 36.25%;
+    width: 70%;
+    padding: 5px 5px;
+    height: 100%;
+    padding-bottom: 40.25%;
     overflow: hidden;
 }
 
@@ -736,7 +729,7 @@ footer a {
     }
     
     .hotel-card-popular img {
-        width:13rem; 
+        width:16rem; 
         border-radius: 15px 15px 15px 15px;
     }
 
@@ -829,7 +822,7 @@ footer a {
     .hotel-card-picture2 {
         height:100%;
         width: 30%;
-        padding-bottom: 33.25%;
+        padding-bottom: 56.25%;
     }
 
                                 /*Hébergements*/
@@ -875,6 +868,14 @@ footer a {
     }
 
     @media screen and (max-width: 767px) {
+
+        #populaires {
+            order: 1;
+        }
+
+        .hotel-grid {
+            order: 2;
+        }
 
         #populaires figure {
             margin-right: 0;
