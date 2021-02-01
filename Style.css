@@ -626,6 +626,11 @@ footer a {
         margin-top: 0;
     }
 
+    .hotel-grid {
+        padding: 0;
+        background-color: transparent;
+    }
+
     .hotel-grid figure {
         margin: 10px;
     }
@@ -640,7 +645,7 @@ footer a {
     }
 
     .hotel-cards figure{
-        width:auto;
+        width:100%;
     }
 
     .hotel-grid h4 {
@@ -672,26 +677,26 @@ footer a {
     /*Vieux port et Parc national des Calanques*/ 
     
     #pict-xl img {
-        height: 11rem;
+        height: 15rem;
         object-fit: cover;
     }
 
     /*Fort de Pomègues et Ile du Frioul*/
 
     #fort img {
-        height: 11rem;
+        height: 15rem;
         object-fit: cover;
     }
 
     #frioul img {
-        height: 11rem;
+        height: 15rem;
         object-fit: cover;
     }
 
     /*Notre Dame et Parc*/
 
     #dame-parc img {
-        height: 11rem;
+        height: 15rem;
         object-fit: cover;
     }
 
@@ -727,7 +732,7 @@ footer a {
         display: block;
         padding: 0px 16px 16px 0px;
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
-        margin-right: 20px;
+        margin-right: 25px;
     }
 
     #populaires figcaption {
@@ -828,7 +833,7 @@ footer a {
     
     .hotel-card-picture2 {
         height:100%;
-        width: 30%;
+        width: 100%;
         padding-bottom: 56.25%;
     }
 
@@ -863,7 +868,7 @@ footer a {
                                                 /*footer*/
 
     .footer-box {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     }
