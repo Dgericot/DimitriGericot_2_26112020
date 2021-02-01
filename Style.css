@@ -205,7 +205,7 @@ input::placeholder {
 /*Hébergements et activités*/
 
 .fa-chart-line {
-    padding-left: 160px;
+    padding-left: 120px;
 }
 
 .fa-star {
@@ -269,15 +269,20 @@ figcaption p {
     flex-wrap: wrap;
     border-radius: 25px 25px 25px 25px;
     background-color: #f2f2f2;
-    padding:25px;
-    margin-top: 20px;
+    padding: 35px 25px 0px 25px;
+    margin-top: 40px;
+}
+
+.hotel-grid h4 {
+    margin-top: 30px;
+    padding-left: 12px;
 }
 
 .hotel-card-picture {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 46.25%;
     overflow: hidden;
 }
 
@@ -291,10 +296,10 @@ figcaption p {
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     box-shadow:  0px 2px 20px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
-    margin-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     padding: 6px;
-    width:28%;
+    width:29%;
 }
 
 .hotel-card-picture img {
@@ -310,23 +315,24 @@ figcaption p {
     flex-direction: column;
     border-radius: 25px 25px 25px 25px;
     margin-left: 40px;
-    margin-top: 20px;
-    padding: 20px 20px 60px 20px;
+    margin-top: 40px;
+    padding: 25px 25px 1px 25px;
     background-color: #f2f2f2;
 }
 
 #populaires figcaption {
     display: flex;
     flex-direction: column;
-    width: 22rem;
+    width: 19rem;
     text-align: left;
 }
 
 #populaires figure {
     display: flex;
     border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
     background-color: white;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .hotel-card-popular img {
@@ -334,15 +340,15 @@ figcaption p {
 }
 
 .hotel-card-popular figure {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 }
 
 .hotel-card-picture2 {
     position:relative;
-    width: 70%;
-    padding: 5px 5px;
+    width: 60%;
+    padding: 5px 6px;
     height: 100%;
-    padding-bottom: 40.25%;
+    padding-bottom: 42.25%;
     overflow: hidden;
 }
 
@@ -353,7 +359,7 @@ height: 100%;
 }
 
 #populaires .fa-star {
-    line-height: 6em;
+    line-height: 5em;
 }
 
                                 /*Dernière section activités*/
@@ -391,12 +397,13 @@ height: 100%;
 }
 
 .card-activity {
-    width: 25%;
+    width: 24%;
 }
 
 .card-activity figure {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .activity-picture a {
@@ -406,7 +413,7 @@ height: 100%;
                             /*Port et Parc National*/
 
 #pict-xl img {
-    height: 315px;
+    height: 335px;
     object-fit: cover;
 }
 
