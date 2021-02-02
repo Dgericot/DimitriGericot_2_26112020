@@ -74,7 +74,7 @@ h2 {
     padding-left: 12px;
 }
 
-                    /*Pour la section hébergements et activités*/
+/*Pour la section hébergements et activités*/
 
 section {
     flex-wrap: nowrap;
@@ -149,7 +149,7 @@ input::placeholder {
     font-size: 1em;
 }
 
-                            /*Icônes et encadrement filtres*/
+/*Icônes et encadrement filtres*/
 
 .filtres-bouton {
     display: flex;
@@ -166,7 +166,6 @@ input::placeholder {
     margin: 6px;
     height:47px;
     padding: 5px 15px 5px 0;
-    align-items: center;
     border-left: 0;
 }
 
@@ -273,6 +272,10 @@ figcaption p {
     margin-top: 40px;
 }
 
+.hotel-grid h2 {
+    margin-top: 10px;
+}
+
 .hotel-grid h4 {
     margin-top: 30px;
     padding-left: 12px;
@@ -308,7 +311,7 @@ figcaption p {
     height: 100%;
 }
 
-                                /*section aside Les plus populaires*/
+/*section aside Les plus populaires*/
 
 
 #populaires {
@@ -332,7 +335,7 @@ figcaption p {
     border-radius: 25px 25px 25px 25px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
     background-color: white;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .hotel-card-popular img {
@@ -346,7 +349,7 @@ figcaption p {
 .hotel-card-picture2 {
     position:relative;
     width: 60%;
-    padding: 5px 6px;
+    padding: 6px 6px;
     height: 100%;
     padding-bottom: 42.25%;
     overflow: hidden;
@@ -362,7 +365,7 @@ height: 100%;
     line-height: 5em;
 }
 
-                                /*Dernière section activités*/
+/*Dernière section activités*/
 
 #act-Marseille{
     display: block;
@@ -387,7 +390,7 @@ height: 100%;
     }
 
 
-                                /*Images activity*/
+/*Images activity*/
 
 .activity-picture {
     position: relative;
@@ -410,7 +413,7 @@ height: 100%;
     display: block;
 }
 
-                            /*Port et Parc National*/
+/*Port et Parc National*/
 
 #pict-xl img {
     height: 335px;
@@ -421,7 +424,7 @@ height: 100%;
     height: 100%;
 }
 
-                            /*Fort et Frioul*/
+/*Fort et Frioul*/
 
 #fort img {
     height: 160px;
@@ -437,7 +440,7 @@ height: 100%;
     padding-top: 27px;
 }
 
-                            /*Notre Dame et Parc*/
+/*Notre Dame et Parc*/
 
 #dame-parc img {
     height: 125px;
@@ -506,11 +509,11 @@ footer a {
 
     body h1 {
         line-height: 1.2em;
-        font-size:1em;
+        font-size:1.3em;
     }
 
     h2 {
-        font-size: 1.1em;
+        font-size: 1.4em;
         padding: 10px;
     }
 
@@ -544,7 +547,10 @@ footer a {
         font-size: 0.8em;
         margin-bottom: 14px;
     }
-    
+    .liens-menu a {
+        padding-bottom: 0.5rem;
+    }
+
     header ul {
         padding:0px;
         width: 100%;
@@ -626,9 +632,15 @@ footer a {
         margin-top: 0;
     }
 
+    #populaires {
+        width: 100%;
+        margin-left: 0;
+    }
+
     .hotel-grid {
         padding: 0;
         background-color: transparent;
+        order:2;
     }
 
     .hotel-grid figure {
@@ -652,7 +664,7 @@ footer a {
         padding: 10px;
     }
 
-                                    /*Activités*/
+    /*Activités*/
 
     /*id de la section*/
 
@@ -707,6 +719,7 @@ footer a {
     }
     .footer-box {
         flex-direction: column;
+        padding: 1rem;
     }
 }
 
@@ -719,7 +732,7 @@ footer a {
     padding: 5px;
     }
         
-                                /*Populaires*/
+    /*Populaires*/
 
 
     #populaires {
@@ -768,7 +781,7 @@ footer a {
         text-align: center;
     }
 
-                                /*Hébergements*/
+    /*Hébergements*/
     
     .hotel-grid {
         padding: 0;
@@ -794,6 +807,7 @@ footer a {
     }
 
     /*Les plus populaires*/
+    
     aside {
         width: 100%;
         padding: 0;
@@ -832,7 +846,7 @@ footer a {
         padding-bottom: 56.25%;
     }
 
-                                /*Hébergements*/
+    /*Hébergements*/
 
     .hotel-grid {
         order:2;
@@ -845,7 +859,7 @@ footer a {
         width: 100%;
     }
 
-                                /*activités*/
+    /*activités*/
 
     .activity {
         flex-direction: row;
@@ -860,10 +874,11 @@ footer a {
         text-align: center;
     }
     
-                                                /*footer*/
+    /*footer*/
 
     .footer-box {
         flex-direction: column;
+        padding: 1rem;
     }
 
     }
@@ -879,6 +894,9 @@ footer a {
 
         #populaires {
             order: 1;
+            margin-left: 0;
+            width: 100%;
+            border-radius: 0;
         }
 
         .hotel-grid {
@@ -886,7 +904,8 @@ footer a {
         }
 
         #populaires figure {
-            margin-right: 0;
+            margin-right: 1rem;
+            padding-bottom: 6px;
         }
 
         .hotel-card-popular figure {
@@ -895,6 +914,11 @@ footer a {
 
         .hotel-card-popular img {
             width: 100%;
+        }
+
+        .card-activity figure {
+            width: 100%;
+            height: 100%;
         }
 
     }
