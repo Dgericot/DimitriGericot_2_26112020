@@ -730,23 +730,23 @@ footer a {
 
     #populaires figure {
         display: block;
-        padding: 0px 16px 16px 0px;
+        padding: 0px 20px 1px 0px;
+        border-radius: 40px 40px 25px 25px;
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
-        margin-right: 25px;
+        margin-right: 15px;
     }
 
     #populaires figcaption {
         margin: 7px;
         padding-top: 5px;
+        width: 10rem;
     }
     
     .hotel-card-popular img {
-        width:16rem; 
-        border-radius: 15px 15px 15px 15px;
+        border-radius: 40px 40px 0px 0px;
     }
 
     .hotel-card-picture2 {
-        overflow: unset;
         height: 2.9em;
         width: 12em;
         padding-bottom: 56.25%;
@@ -805,11 +805,6 @@ footer a {
     }
 
     #populaires {
-        flex-direction: column;
-        order:1;
-        border-radius:0px;
-        padding: 1px;
-        width:100%;
         margin-left:0;
     }
 
@@ -874,6 +869,7 @@ footer a {
     }
 
     @media screen and (max-width:1024px) {
+        
         .hebergements {
             flex-direction: column;
         }
