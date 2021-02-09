@@ -390,7 +390,7 @@ height: 100%;
     }
 
 
-/*Images activity*/
+/*Images activités*/
 
 .activity-picture {
     position: relative;
@@ -415,12 +415,12 @@ height: 100%;
 
 /*Port et Parc National*/
 
-#pict-xl img {
+.pict-xl img {
     height: 335px;
     object-fit: cover;
 }
 
-#pict-xl a {
+.pict-xl a {
     height: 100%;
 }
 
@@ -442,7 +442,7 @@ height: 100%;
 
 /*Notre Dame et Parc*/
 
-#dame-parc img {
+.dame-parc img {
     height: 125px;
     object-fit: cover;
 }
@@ -538,7 +538,7 @@ footer a {
         order:1;
     }
 
-    /*Les 3 liens du menu*/
+    /*Les 3 liens nav du menu*/
 
     .liens-menu {
         width: 100%;
@@ -631,6 +631,8 @@ footer a {
         margin-top: 0;
     }
 
+    /*Populaires et hébergements*/
+
     #populaires {
         width: 100%;
         margin-left: 0;
@@ -689,7 +691,7 @@ footer a {
 
     /*Vieux port et Parc national des Calanques*/ 
     
-    #pict-xl img {
+    .pict-xl img {
         height: 15rem;
         object-fit: cover;
     }
@@ -708,7 +710,7 @@ footer a {
 
     /*Notre Dame et Parc*/
 
-    #dame-parc img {
+    .dame-parc img {
         height: 15rem;
         object-fit: cover;
     }
