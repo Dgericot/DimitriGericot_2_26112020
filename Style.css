@@ -514,7 +514,7 @@ footer a {
 
     h2 {
         font-size: 1.4em;
-        padding: 10px;
+        padding: 10px 0;
     }
 
     figcaption {
@@ -644,7 +644,8 @@ footer a {
     }
 
     .hotel-grid figure {
-        margin: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
     }
 
     .hotel-card-picture{
@@ -902,6 +903,8 @@ footer a {
 
         .hotel-grid {
             order: 2;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         #populaires figure {
@@ -917,9 +920,16 @@ footer a {
             width: 100%;
         }
 
+        #act-Marseille {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        
         .card-activity figure {
             width: 100%;
             height: 100%;
+            margin-right: 0;
+            margin-left: 0;
         }
 
     }
