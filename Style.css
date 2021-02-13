@@ -88,27 +88,38 @@ section {
     display: flex;
 }
 
-/*barre de recherche, titre et p*/
+/*form, barre de recherche, titre et p*/
 
 .adaptation-responsive p {
     margin:0;
     font-size: 0.9em ;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .fa-map-marker-alt {
     color: black;
     border-radius: 16px 0px 0px 16px;
     background-color:  #f2f2f2;
-    padding: 16px;
-    padding-bottom: 18px;
-    padding-top: 16px;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 16px;
 }
 
 input {
     border:2px solid #f2f2f2;
     border-color: #f2f2f2;
-    padding: 15px;
+    padding: 0 15px;
     border-right: 10px;
+}
+
+.recherche input {
+    height: 100%;
+    box-sizing: border-box;
 }
 
 input::placeholder {
@@ -116,6 +127,7 @@ input::placeholder {
     color: black;
     font-weight: bold;
     font-size: 1.2em;
+    opacity: 1;
 }
 
 .recherche  {
@@ -123,24 +135,30 @@ input::placeholder {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 25px 0;
+    height: 50px;
     background-color: transparent;
 }
 
 /*.recherche*/
-#bouton {
+
+.recherche-submit {
     font-family: "Raleway", sans-serif;
     color: white;
+    font-weight: bold;
     font-size: 1em;
     border:none;
+    height: 100%;
     border-radius: 0px 15px 15px 0px;
     border-color: #f2f2f2;
-    padding: 15px;
+    padding: 0 15px;
     margin-left: -10px;
     background-color: #0065fc;
 }
 
 .fa-search {
     color: transparent;
+    display: none;
 }
                 /*######*/
                 /*Filtres*/
@@ -550,6 +568,7 @@ footer a {
         font-size: 0.8em;
         margin-bottom: 14px;
     }
+
     .liens-menu a {
         padding-bottom: 0.5rem;
     }
@@ -589,15 +608,7 @@ footer a {
     }
 
     /*Barre de recherche*/
-
-    .fa-map-marker-alt {
-        padding:14px;
-    }
     
-    input {
-        padding: 12px;
-    }
-
     input::placeholder {
         font-size: 1em;
     }
@@ -605,19 +616,23 @@ footer a {
     .recherche {
         align-items: center;
     }
+
+    .recherche input {
+        font-size: 1em;
+    }
+
+    .recherche-submit {
+        border-radius: 15px 15px 15px 15px;
+    }
     
-    .recherche h5 { 
-        color: transparent;
-        border-radius: 10px 10px 10px 10px;
-        width: 16px;
-        height: 14px;
-        line-height: 9px;
-        padding: 6px 11px 22px 13px;
+    .recherche-submit span { 
+        display: none;
     }
 
     .fa-search {
         color: white;
         text-align: center;
+        display: inline-block;
     }
 
     /*Filtres*/
@@ -627,11 +642,11 @@ footer a {
     }
 
     #filtres span {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     #filtres h4 {
-        font-size: 0.8em;
+        font-size: 1em;
         margin-top: 0;
     }
 
