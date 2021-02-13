@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="Style.css" rel="stylesheet" />
     <link href="./css/all.css" rel="stylesheet">
+    <link href="Style.css" rel="stylesheet" />
     <title>Reservia</title>
 </head>
 
@@ -41,14 +41,12 @@
 
                 <div class="recherche">
                     <i class="fas fa-map-marker-alt"></i>
-                    <form method="POST" action="traitement.php">
-                        <p>
-                            <label for="area"></label>
-                            <input type="text" name="area" id="area" placeholder="Marseille,France" />
-                        </p>
-                        <div id="bouton">
-                            <input type="submit" value="Rechercher" /> <i class="fas fa-search"></i>
-                        </div>
+                    <form action="#">
+
+                        <input type="text" name="area" id="area" placeholder="Marseille,France" />
+
+                        <button class="recherche-submit"><i class="fas fa-search"></i><span>Rechercher</span></button>
+
                     </form>
                 </div>
 
